@@ -1,0 +1,17 @@
+--- original/errno.c
++++ errno.c
+@@ -1,8 +1,13 @@
++#include <sys/sendfile.h>
++#include <sys/stat.h>
++#include <errno.h>
++#include <unistd.h>
++#include <stdlib.h>
+ #include <fcntl.h>
+ #include <stdio.h>
+ 
+ void main(){
+-    fd = open("foo", O_WRONLY | O_CREAT, 0644);
++    int fd = open("foo", O_WRONLY | O_CREAT, 0644);
+     if(fd >= 0){
+         write(fd, "hello_world", 11);
+         close(fd);

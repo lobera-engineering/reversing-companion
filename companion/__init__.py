@@ -1,0 +1,1 @@
+"""Artik Blue course companion."""

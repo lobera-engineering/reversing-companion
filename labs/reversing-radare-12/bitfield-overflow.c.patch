@@ -1,0 +1,12 @@
+--- original/bitfield-overflow.c
++++ bitfield-overflow.c
+@@ -1,9 +1,3 @@
+-#include <stdio.h>
+-#include <string.h>
+-
+-struct {
+-   unsigned int age : 3;
+-} Age;
+ #include <stdio.h>
+ #include <string.h>
+ 

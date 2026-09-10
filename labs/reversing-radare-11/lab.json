@@ -1,0 +1,150 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-11",
+  "source_url": "https://artik.blue/reversing-radare-11",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "linked-list.c",
+  "default": "linked-list",
+  "examples": [
+    {
+      "id": "linked-list",
+      "title": "Three linked nodes",
+      "source": "linked-list.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 21,
+      "original_sha256": "6dabb339ed1eb3bc8fc4b5363bf3c008c5f534845477b6a28531fbe5ac631a30",
+      "source_sha256": "6dabb339ed1eb3bc8fc4b5363bf3c008c5f534845477b6a28531fbe5ac631a30",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "1 2 3"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "random-list",
+      "title": "Dynamic linked list",
+      "source": "random-list.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 14,
+      "article_line": 262,
+      "original_sha256": "9edf79be6d22aa5c926216d243d07ddfb696c286f18440068562e87a85071528",
+      "source_sha256": "9edf79be6d22aa5c926216d243d07ddfb696c286f18440068562e87a85071528",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "bitwise",
+      "title": "Bitwise operations",
+      "source": "bitwise.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 18,
+      "article_line": 479,
+      "original_sha256": "f4bc3c2fada1335c5f387334952332427c44c78031360a8e89fabba4df750f4c",
+      "source_sha256": "f4bc3c2fada1335c5f387334952332427c44c78031360a8e89fabba4df750f4c",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "Complement of a = -68",
+            "a AND b = 1",
+            "a OR b =  99",
+            "a XOR b = 98",
+            "A left shifted 1 = 134",
+            "A right shifted 1 = 33"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "enum-week",
+      "title": "Enum values",
+      "source": "enum-week.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 25,
+      "article_line": 610,
+      "original_sha256": "fe8307f6b62b7b1a748319c83f2af7a2cd1032bb7a929d967e2328564c798ed5",
+      "source_sha256": "fe8307f6b62b7b1a748319c83f2af7a2cd1032bb7a929d967e2328564c798ed5",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "Day 4"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "enum-flags",
+      "title": "Combine flags",
+      "source": "enum-flags.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 27,
+      "article_line": 648,
+      "original_sha256": "ef2982122216a777b2d612bf8b2ab147219ba7e0df216cae869e75408b71c130",
+      "source_sha256": "ef2982122216a777b2d612bf8b2ab147219ba7e0df216cae869e75408b71c130",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "5"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    "Linked lists",
+    "Discovering r2pipe",
+    "Bitwise operations",
+    "Enums"
+  ],
+  "walkthrough_validation": "pending"
+}

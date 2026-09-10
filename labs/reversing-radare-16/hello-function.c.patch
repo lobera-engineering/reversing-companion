@@ -1,0 +1,9 @@
+--- original/hello-function.c
++++ hello-function.c
+@@ -1,3 +1,6 @@
++#include <strings.h>
++#include <unistd.h>
++#include <stdlib.h>
+ #include <stdio.h>
+ 
+ void hello(){

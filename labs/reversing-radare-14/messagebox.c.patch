@@ -1,0 +1,10 @@
+--- original/messagebox.c
++++ messagebox.c
+@@ -1,6 +1,6 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+-#include <Windows.h>
++#include <windows.h>
+ 
+ int main()
+ {

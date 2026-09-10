@@ -1,0 +1,157 @@
+{
+    "schema_version": 2,
+    "lesson": "reversing-radare-17",
+    "source_url": "https://artik.blue/reversing-radare-17",
+    "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+    "source": "http-client.c",
+    "default": "http-client",
+    "examples": [
+        {
+            "id": "http-client",
+            "title": "Winsock HTTP client",
+            "source": "http-client.c",
+            "language": "c",
+            "platform": "windows",
+            "standard": "gnu11",
+            "article_fence": 0,
+            "article_line": 21,
+            "original_sha256": "9908d02b8a1334224bf2d5cf391a64900514f6c2e93393cd68fca649ba5d25de",
+            "source_sha256": "9908d02b8a1334224bf2d5cf391a64900514f6c2e93393cd68fca649ba5d25de",
+            "adaptations": [],
+            "cflags": [],
+            "ldflags": [
+                "-lws2_32"
+            ],
+            "fixtures": {},
+            "validation": "pending",
+            "cases": [],
+            "skip_execution": "C&C client — connects to hardcoded C2 server (192.168.0.50:80). Requires live HTTP server in the lab."
+        },
+        {
+            "id": "udp-client",
+            "title": "UDP client",
+            "source": "udp-client.c",
+            "language": "c",
+            "platform": "windows",
+            "standard": "gnu11",
+            "article_fence": 15,
+            "article_line": 476,
+            "original_sha256": "7ae9063873fe050903c475d375db913001284fdca7c0a7e079d7bdb46d9620dc",
+            "source_sha256": "7ae9063873fe050903c475d375db913001284fdca7c0a7e079d7bdb46d9620dc",
+            "adaptations": [],
+            "cflags": [],
+            "ldflags": [
+                "-lws2_32"
+            ],
+            "fixtures": {},
+            "validation": "pending",
+            "cases": [],
+            "skip_execution": "C&C client — sends UDP to hardcoded C2 server (192.168.0.50:5353). Requires live UDP listener in the lab."
+        },
+        {
+            "id": "dns-query",
+            "title": "DNS packet fields",
+            "source": "dns-query.c",
+            "language": "c",
+            "platform": "windows",
+            "standard": "gnu11",
+            "article_fence": 24,
+            "article_line": 757,
+            "original_sha256": "5feca7c08f7862e69999f1dd4798fce92287085c0ae970e713efe7233c025ebe",
+            "source_sha256": "5feca7c08f7862e69999f1dd4798fce92287085c0ae970e713efe7233c025ebe",
+            "adaptations": [],
+            "cflags": [],
+            "ldflags": [
+                "-lws2_32"
+            ],
+            "fixtures": {},
+            "validation": "pending",
+            "cases": [],
+            "skip_execution": "DNS exfiltration — sends raw DNS query to 192.168.0.50:53. Requires live DNS server in the lab."
+        },
+        {
+            "id": "dns-client",
+            "title": "Construct DNS queries",
+            "source": "dns-client.c",
+            "language": "c",
+            "platform": "windows",
+            "standard": "gnu11",
+            "article_fence": 27,
+            "article_line": 1010,
+            "original_sha256": "9bcca1c0a5e1b8ed5d35e12868266dc6281e4157ba69f063e40a082a7da3ec3f",
+            "source_sha256": "9bcca1c0a5e1b8ed5d35e12868266dc6281e4157ba69f063e40a082a7da3ec3f",
+            "adaptations": [],
+            "cflags": [],
+            "ldflags": [
+                "-lws2_32"
+            ],
+            "fixtures": {},
+            "validation": "pending",
+            "cases": [],
+            "skip_execution": "DNS C&C RAT — crafts DNS TXT queries to 192.168.0.50:53. Requires live DNS server and interactive input."
+        },
+        {
+            "id": "dns-command",
+            "title": "Analyze DNS command transport",
+            "source": "dns-command.c",
+            "language": "c",
+            "platform": "windows",
+            "standard": "gnu11",
+            "article_fence": 37,
+            "article_line": 1600,
+            "original_sha256": "b23ed5f793aed7c311a64733ce4f47d2df86b46fa37f6f65278fd533d9f228a0",
+            "source_sha256": "b23ed5f793aed7c311a64733ce4f47d2df86b46fa37f6f65278fd533d9f228a0",
+            "adaptations": [],
+            "cflags": [],
+            "ldflags": [
+                "-lws2_32"
+            ],
+            "fixtures": {},
+            "validation": "pending",
+            "cases": [],
+            "skip_execution": "DNS C&C command loop — polls 192.168.0.50:53 indefinitely. Requires live DNS C2 server."
+        },
+        {
+            "id": "dns-file",
+            "title": "Analyze DNS file transport",
+            "source": "dns-file.c",
+            "language": "c",
+            "platform": "windows",
+            "standard": "gnu11",
+            "article_fence": 47,
+            "article_line": 2355,
+            "original_sha256": "02c2b6a7985f48fa287620dd302cfcf6d733426ddc3be7082303be22c83b775c",
+            "source_sha256": "18fd851635161d104b97b7d5d6b95d7086a4a8abecf80e9324077c7340c1b9b8",
+            "adaptations": [
+                "Declare the article-linked base64 implementation and its size_t output length.",
+                "Use HANDLE for CreateFile so Win64 file handles are not truncated to int.",
+                "Compile the linked BSD base64 source with libc wrappers for its wpa os_* helpers; original retained in vendor/."
+            ],
+            "cflags": [],
+            "ldflags": [
+                "-lws2_32"
+            ],
+            "fixtures": {},
+            "validation": "pending",
+            "cases": [],
+            "support_files": [
+                "base64.c",
+                "base64.h"
+            ],
+            "extra_sources": [
+                "base64.c"
+            ],
+            "skip_execution": "DNS file exfiltration — reads C:\\samples\\newfile.txt and sends base64 chunks via DNS to 192.168.0.50:53. Requires file and live DNS server."
+        }
+    ],
+    "sections": [
+        "About Winsock",
+        "Get requests with winsock",
+        "Hello world UDP ",
+        "\"Reversing\" network protocols: DNS ",
+        "Custom DNS queries in C ",
+        "Malware Command & Control systems through DNS ",
+        "Base64 encoding/decoding in C and File exfiltration through DNS "
+    ],
+    "walkthrough_validation": "pending"
+}

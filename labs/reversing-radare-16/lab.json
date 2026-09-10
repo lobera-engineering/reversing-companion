@@ -1,0 +1,157 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-16",
+  "source_url": "https://artik.blue/reversing-radare-16",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "hello-function.c",
+  "default": "hello-function",
+  "examples": [
+    {
+      "id": "hello-function",
+      "title": "Extract a function",
+      "source": "hello-function.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 11,
+      "article_line": 456,
+      "original_sha256": "5508894b5c438350b8e5d38d956ac99c9f93f9808a2447d1cae13d5bfb3d0c49",
+      "source_sha256": "8da03c2a522d10714b88f1b67249c781c7ba03414bd1be3f714dd19c1c05a841",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <strings.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "hello world"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "nop-buffer",
+      "title": "Data versus executable memory",
+      "source": "nop-buffer.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 13,
+      "article_line": 508,
+      "original_sha256": "3053ad8bda02cdb274f81fbb0c0e187ebca1666c4f89c95ee802c549913aa11f",
+      "source_sha256": "c1eb61be6ae558c025b362248d66bfbfc2a2b47c42168f967aa4d72a84616654",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <strings.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": [],
+          "signal": 11
+        }
+      ]
+    },
+    {
+      "id": "copied-code",
+      "title": "Relocation in copied machine code",
+      "source": "copied-code.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 20,
+      "article_line": 654,
+      "original_sha256": "d543b987099ef4c4c22cb0f81fe4979ab8b9e7aaef31c510094581598aac6df3",
+      "source_sha256": "c0bb1c634fb95c1097d7bd54be839c8361fb7ef2cb4c64c46450b7db01cab002",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <strings.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": [],
+          "signal": 11
+        }
+      ]
+    },
+    {
+      "id": "write-exit",
+      "title": "Position independent write and exit",
+      "source": "write-exit.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 23,
+      "article_line": 741,
+      "original_sha256": "617d89c47ef31fb77df60eb0807303100f22e3256b28a2f264adc41c864158a3",
+      "source_sha256": "c08a9bcadb0c2cd40b94244d0a2cc0ec0db6939cd6b81ee8983ce7ede6573dd5",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <strings.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "Hello!"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "http-code",
+      "title": "Download code over a local HTTP connection",
+      "source": "http-code.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 26,
+      "article_line": 787,
+      "original_sha256": "cd87c79feb823598fb23562560c0cef9b4a36abe3d27ff5e698b5b93bc89003e",
+      "source_sha256": "4c414cafdb51981e988f1236126aa5339844749928dd5822a668c714fb6f76f4",
+      "adaptations": [
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <strings.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [],
+      "network_check": "http-code"
+    }
+  ],
+  "sections": [
+    "Performing get requests with UNIX sockets",
+    "Downloading and executing code in memory",
+    "Intro to shellcode",
+    "Downloading shellcode"
+  ],
+  "walkthrough_validation": "pending"
+}

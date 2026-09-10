@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-22",
+  "source_url": "https://artik.blue/reversing-radare-22",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "stack-exec.c",
+  "default": "stack-exec",
+  "examples": [
+    {
+      "id": "stack-exec",
+      "title": "Stack execution permissions",
+      "source": "stack-exec.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 14,
+      "original_sha256": "229cf1df8cbe3d6c30c689b8c7290379483972e1a54aaf88e3c69da3c3c1af21",
+      "source_sha256": "50a6f41e68462d5769fdb34646ba5b7f0cfa0c2ccedaefe296cd10fb7934b962",
+      "adaptations": [
+        "Replace typographic opening quotes in C.",
+        "Replace typographic closing quotes in C."
+      ],
+      "cflags": [
+        "-fno-stack-protector"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n",
+          "contains": [
+            "Hi there Artik !!"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "mprotect",
+      "title": "Change memory permissions",
+      "source": "mprotect.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 5,
+      "article_line": 106,
+      "original_sha256": "432de91babf707e50d322e632468caaaee91ad15e4b713935dad5365c932b34c",
+      "source_sha256": "432de91babf707e50d322e632468caaaee91ad15e4b713935dad5365c932b34c",
+      "adaptations": [],
+      "cflags": [
+        "-fno-stack-protector"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n",
+          "contains": [
+            "Pagesize:",
+            "Hi there Artik !!"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    "DEP and Execution on the stack",
+    "MPROTECT()",
+    "Crafting the exploit",
+    "References"
+  ],
+  "walkthrough_validation": "pending"
+}

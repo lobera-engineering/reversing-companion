@@ -1,0 +1,10 @@
+--- original/records-write.c
++++ records-write.c
+@@ -1,3 +1,7 @@
++#include <sys/sendfile.h>
++#include <sys/stat.h>
++#include <errno.h>
++#include <unistd.h>
+ #include <stdio.h> 
+ #include <stdlib.h> 
+ #include <string.h> 

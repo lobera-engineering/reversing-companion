@@ -1,0 +1,323 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-13",
+  "source_url": "https://artik.blue/reversing-radare-13",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "syscall-write.c",
+  "default": "syscall-write",
+  "examples": [
+    {
+      "id": "syscall-write",
+      "title": "File descriptors and write",
+      "source": "syscall-write.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 34,
+      "original_sha256": "9ed0cfd1e0223c28a1a7f862567a5579e00e2dbec4b07dc85c7f36cd499f7a9e",
+      "source_sha256": "1faa9871ff9bee431acfc871ee7d61cb71970fbfa09fa1e71fc7da7c3c7afc53",
+      "adaptations": [
+        "Add missing declaration header <stdio.h>.",
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <errno.h>.",
+        "Add missing declaration header <sys/stat.h>.",
+        "Add missing declaration header <sys/sendfile.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "hello world",
+            "hello world2"
+          ],
+          "args": [],
+          "files": {
+            "foo": "hello_world"
+          }
+        }
+      ]
+    },
+    {
+      "id": "libc-print",
+      "title": "libc and system calls",
+      "source": "libc-print.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 5,
+      "article_line": 130,
+      "original_sha256": "80f44a1c9fb0d6fe2297501170da6e58fc9f109bc95771ce24c477669f6c1787",
+      "source_sha256": "00e270cfc1d3ffa41afc15f85d437d2af5979992d16bc596ee7d752df38e5243",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <errno.h>.",
+        "Add missing declaration header <sys/stat.h>.",
+        "Add missing declaration header <sys/sendfile.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "ssssssssyscall"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "errno",
+      "title": "Open error handling",
+      "source": "errno.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 9,
+      "article_line": 174,
+      "original_sha256": "18b784344e8f691901804332bac5749807625d4410592fb27a8ee40d3f882804",
+      "source_sha256": "1eb991a938df5769c3e5297ec9d74da942cd080d8cd90f5273824e7034f2ff1c",
+      "adaptations": [
+        "Declare the file descriptor printed without its type.",
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <errno.h>.",
+        "Add missing declaration header <sys/stat.h>.",
+        "Add missing declaration header <sys/sendfile.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": [],
+          "files": {
+            "foo": "hello_world"
+          }
+        }
+      ]
+    },
+    {
+      "id": "copy",
+      "title": "Read and write copy",
+      "source": "copy.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 10,
+      "article_line": 217,
+      "original_sha256": "d4fcc5b1c52c301bf2783db87fce3e65872e4f7c121ca81c1bd8de0ac006dc96",
+      "source_sha256": "8889657188a929db4fbd61a78dc40eee22884f76cf3d49503bae89b78e2d0657",
+      "adaptations": [
+        "Correct ffout/fout spelling so the opened descriptor is used.",
+        "Add missing declaration header <stdio.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <errno.h>.",
+        "Add missing declaration header <sys/stat.h>.",
+        "Add missing declaration header <sys/sendfile.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {
+        "foo": "Course copy fixture\n"
+      },
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": [],
+          "files": {
+            "bar": "Course copy fixture\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sendfile",
+      "title": "Kernel file copy",
+      "source": "sendfile.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 16,
+      "article_line": 382,
+      "original_sha256": "fdd8ee4fcdf4a6fffa27525246fef3fac1aff43b609aed6722a0952064f06678",
+      "source_sha256": "b1337c6438713ce0a4d30a2b287725960e19b1e086799f34731a88864556616c",
+      "adaptations": [
+        "Add missing declaration header <stdio.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <errno.h>.",
+        "Add missing declaration header <sys/stat.h>.",
+        "Add missing declaration header <sys/sendfile.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {
+        "foo": "Course copy fixture\n"
+      },
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": [
+            "foo",
+            "bar"
+          ],
+          "files": {
+            "bar": "Course copy fixture\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "records-write",
+      "title": "Serialize structs",
+      "source": "records-write.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 21,
+      "article_line": 526,
+      "original_sha256": "94b695d6bfd835d1a6ddf0b1ef315d3e9e5a9c127c6096558f5f08021c3924ee",
+      "source_sha256": "54102ae425a3d791ef3dbed0bb04ec7cd801193327147c4baa7d3399bda81630",
+      "adaptations": [
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <errno.h>.",
+        "Add missing declaration header <sys/stat.h>.",
+        "Add missing declaration header <sys/sendfile.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "records-seek",
+      "title": "Seek to a record",
+      "source": "records-seek.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 27,
+      "article_line": 689,
+      "original_sha256": "2efb98bcc9a250c2929293ac6380ed10300a7621f8cf3362a729f6063d2d1960",
+      "source_sha256": "03114ed49cc9582ef76ae39240a86f4b3221ac4a7771336bd54ce55bf4dbd472",
+      "adaptations": [
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <errno.h>.",
+        "Add missing declaration header <sys/stat.h>.",
+        "Add missing declaration header <sys/sendfile.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {
+        "person.dat": {
+          "base64": "AgAAAGpvaG4AAAAAAAAAAAAAAAAAAAAAZG9lAAAAAAAAAAAAAAAAAAAAAAABAAAAYXJ0aWsAAAAAAAAAAAAAAAAAAABibHVlAAAAAAAAAAAAAAAAAAAAAA=="
+        }
+      },
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "second person val = 1, artik, blue"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "records-xor",
+      "title": "XOR records and sizeof pointer",
+      "source": "records-xor.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 30,
+      "article_line": 760,
+      "original_sha256": "6d8d88a33f30fa62a9422cfe1d2f2e609fc9eea7786312af779eeb67bc28c8a0",
+      "source_sha256": "17f91866727e0cf46dacf22e0d033d79972b5467db5baaa49dd174931f65412d",
+      "adaptations": [
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <errno.h>.",
+        "Add missing declaration header <sys/stat.h>.",
+        "Add missing declaration header <sys/sendfile.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {
+        "person.dat": {
+          "base64": "AgAAAGpvaG4AAAAAAAAAAAAAAAAAAAAAZG9lAAAAAAAAAAAAAAAAAAAAAAABAAAAYXJ0aWsAAAAAAAAAAAAAAAAAAABibHVlAAAAAAAAAAAAAAAAAAAAAA=="
+        }
+      },
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "esil-xor",
+      "title": "XOR loop for ESIL",
+      "source": "esil-xor.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 42,
+      "article_line": 1034,
+      "original_sha256": "d959a204bf0b5ab52be22fffc7b74edd82bae439a9bfd3ecaa94df2c037442a0",
+      "source_sha256": "b113740e7aebdd074e5f34ac9fc8c9454e615a8475b1e7bf2a665760e950a678",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <errno.h>.",
+        "Add missing declaration header <sys/stat.h>.",
+        "Add missing declaration header <sys/sendfile.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [],
+      "sanitizer": {
+        "stdin": "",
+        "contains": "stack-buffer-overflow"
+      }
+    }
+  ],
+  "sections": [
+    "Kernel space and User space",
+    "System calls and error handling",
+    "File descriptors",
+    "File copying at system level",
+    "Structs to files",
+    "Moving inside the file",
+    "File loading and XOR string encoding",
+    "A few words on ESIL"
+  ],
+  "walkthrough_validation": "pending"
+}

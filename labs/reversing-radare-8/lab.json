@@ -1,0 +1,137 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-8",
+  "source_url": "https://artik.blue/reversing-radare-8",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "write.c",
+  "default": "write",
+  "examples": [
+    {
+      "id": "write",
+      "title": "Write text",
+      "source": "write.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 14,
+      "original_sha256": "c5dc673f98cbf724834cf58d4956d86c2f8ba20b7c5881fd86d5f0ff397a4c16",
+      "source_sha256": "66eb68676a0642dc2c1830c06c92f97be636748e895de21776a5f12f5d753356",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [],
+          "args": [],
+          "files": {
+            "test.txt": "This is a line\nAnother line that follows the second line\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "read",
+      "title": "Read two lines",
+      "source": "read.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 9,
+      "article_line": 288,
+      "original_sha256": "c19489182c407c07a9805c114049d161036750dc4989eead9358c15dd5c4c108",
+      "source_sha256": "40ecdc43ad2e4452f63fb2bc80eee882871721983dded103522734e9a70ac5fa",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {
+        "test.txt": "This is a line\nAnother line that follows the second line\n"
+      },
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "This is a line",
+            "Another line that follows the second line"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "seek",
+      "title": "Seek and overwrite",
+      "source": "seek.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 16,
+      "article_line": 523,
+      "original_sha256": "de7308846102056566586293aba732e9fd6d5146959fd17ca8728586e520922b",
+      "source_sha256": "946796ba7674b85dcff7615496289d3f7d4ceed8e3bc32ed6a41037270d5bbf5",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": [],
+          "files": {
+            "fseek.txt": "This is C Programming Languageee to visit artik.blue to get fresh reversing stuff"
+          }
+        }
+      ]
+    },
+    {
+      "id": "read-lines",
+      "title": "Read all lines",
+      "source": "read-lines.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 20,
+      "article_line": 606,
+      "original_sha256": "458e84f27f834d6ce68835bdc6ad1c6c1559469c4aaa8d290806e4364b6dde3c",
+      "source_sha256": "5e9a838841d6db972df5880fdc099601c34f9f8a66db02b6e779c174924ffe89",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {
+        "myinputfile.txt": "First line\nSecond line\n"
+      },
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "0: First line",
+            "1: Second line"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    "Write to file",
+    "Read from file",
+    "Seek in file and write",
+    "Read the whole file line by line"
+  ],
+  "walkthrough_validation": "pending"
+}

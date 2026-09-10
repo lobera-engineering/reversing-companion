@@ -1,0 +1,65 @@
+{
+  "malware1": {
+    "status": "available",
+    "name": "malware1-agent-tesla.exe",
+    "sha256": "3080bf75b34e9b440154d8f35f7e8c5bd111995869118a093f81b56583f7c03b",
+    "local_archive": "course/samples.zip",
+    "archive_sha256": "b5a1957e5e7a680cae3206bf3e3b3a1d16042ffe90669777f6368fe836952261",
+    "archive_member": "malware1-agent-tesla.exe",
+    "password": "infected",
+    "execution": "static-only"
+  },
+  "malware2": {
+    "status": "available",
+    "name": "malware2-emotet.bin",
+    "sha256": "d4ea91a1662f77bd4d7cae0b84cef3fd6b10a39017bf4584299c01a013aefcc1",
+    "local_archive": "course/samples.zip",
+    "archive_sha256": "b5a1957e5e7a680cae3206bf3e3b3a1d16042ffe90669777f6368fe836952261",
+    "archive_member": "malware2-emotet.bin",
+    "password": "infected",
+    "url": "https://raw.githubusercontent.com/jstrosch/malware-samples/master/maldocs/emotet/2020/January/samples.zip",
+    "analysis": "emotet",
+    "execution": "static-only"
+  },
+  "malware3": {
+    "status": "available",
+    "name": "malware3-smokeloader.bin",
+    "sha256": "b65806521aa662bff2c655c8a7a3b6c8e598d709e35f3390df880a70c3fded40",
+    "local_archive": "course/samples.zip",
+    "archive_sha256": "b5a1957e5e7a680cae3206bf3e3b3a1d16042ffe90669777f6368fe836952261",
+    "archive_member": "malware3-smokeloader.bin",
+    "password": "infected",
+    "execution": "static-only"
+  },
+  "malware4": {
+    "status": "available",
+    "name": "malware4-ramnit.bin",
+    "sha256": "cfd13da57bb620ec32a6ad174d4d4cac2c715af8e7aaa57931574152f5fffdd9",
+    "local_archive": "course/samples.zip",
+    "archive_sha256": "b5a1957e5e7a680cae3206bf3e3b3a1d16042ffe90669777f6368fe836952261",
+    "archive_member": "malware4-ramnit.bin",
+    "password": "infected",
+    "execution": "static-only"
+  },
+  "malware5": {
+    "status": "available",
+    "name": "malware5-iceid-extracted.bin",
+    "sha256": "a130c0bba422e3fa0f5f5f12ce70ed93ee4f73d4daa88daa407b985b22da843d",
+    "local_archive": "course/samples.zip",
+    "archive_sha256": "b5a1957e5e7a680cae3206bf3e3b3a1d16042ffe90669777f6368fe836952261",
+    "archive_member": "malware5-iceid-extracted.bin",
+    "password": "infected",
+    "url": "https://raw.githubusercontent.com/artikblue/artikblue.github.io/98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28/images/iceloader/extracted.bin",
+    "analysis": "iceid",
+    "execution": "static-only"
+  },
+  "malware6": {
+    "status": "available",
+    "reason": "DLL and injector sources are packaged as examples in labs/malware6."
+  },
+  "malware7": {
+    "status": "available",
+    "reason": "PE and shellcode injector sources are packaged as examples in labs/malware7.",
+    "parallax_sha256": "345d8b4c0479d97440926471c2a8bed43162a3d75be12422c1c410f5ec90acd9"
+  }
+}

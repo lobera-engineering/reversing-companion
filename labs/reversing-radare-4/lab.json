@@ -1,0 +1,175 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-4",
+  "source_url": "https://artik.blue/reversing-radare-4",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "array-sum.c",
+  "default": "array-sum",
+  "examples": [
+    {
+      "id": "array-sum",
+      "title": "Indexed array sum",
+      "source": "array-sum.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 22,
+      "original_sha256": "8dfb237f4307492628f5352d6aeeb5b9fef934e016c0fd1120e28de295ad4447",
+      "source_sha256": "8dfb237f4307492628f5352d6aeeb5b9fef934e016c0fd1120e28de295ad4447",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "SUM IS 700"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "scalar-sum",
+      "title": "Compare independent variables",
+      "source": "scalar-sum.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 6,
+      "article_line": 182,
+      "original_sha256": "f55a7cc2f5da8d766b40bb4a8a3835ba38a88b63a5ff5952d894462fb5ad1c31",
+      "source_sha256": "f55a7cc2f5da8d766b40bb4a8a3835ba38a88b63a5ff5952d894462fb5ad1c31",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "SUM is 700"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "array-loop",
+      "title": "Initialize and traverse an array",
+      "source": "array-loop.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 8,
+      "article_line": 250,
+      "original_sha256": "8119b8929926cf4b407b5609c7d0150bd2f29aeec0e1bde08507851aa46e2b35",
+      "source_sha256": "8119b8929926cf4b407b5609c7d0150bd2f29aeec0e1bde08507851aa46e2b35",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "val 0",
+            "val 50",
+            "val 99"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "array-init",
+      "title": "Array initializer",
+      "source": "array-init.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 13,
+      "article_line": 362,
+      "original_sha256": "a8672719a71fe343ddee5c1ba7269db28d41e9db32e6b6ef39955d094c3cb44b",
+      "source_sha256": "a8672719a71fe343ddee5c1ba7269db28d41e9db32e6b6ef39955d094c3cb44b",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "SUM is 700"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "string-input",
+      "title": "Read a character array",
+      "source": "string-input.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 15,
+      "article_line": 415,
+      "original_sha256": "23dec3261c0af0327599ec0bbc1e2c532ae3e8495bc4fc1d01447ea8b2e61ac7",
+      "source_sha256": "23dec3261c0af0327599ec0bbc1e2c532ae3e8495bc4fc1d01447ea8b2e61ac7",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n\n",
+          "contains": [
+            "Hi, Artik"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "string-index",
+      "title": "Index individual characters",
+      "source": "string-index.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 19,
+      "article_line": 497,
+      "original_sha256": "aae5db95cae9f3f8109c994ac08f4f30e2931a72464720033c467ba9ae1ff378",
+      "source_sha256": "aae5db95cae9f3f8109c994ac08f4f30e2931a72464720033c467ba9ae1ff378",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n\n",
+          "contains": [
+            "First letter: A",
+            "Second letter: r"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    "Arrays",
+    "Initializing arrays",
+    "Char arrays / strings"
+  ],
+  "walkthrough_validation": "pending"
+}

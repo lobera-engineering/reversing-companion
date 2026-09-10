@@ -1,0 +1,169 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-12",
+  "source_url": "https://artik.blue/reversing-radare-12",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "union.c",
+  "default": "union",
+  "examples": [
+    {
+      "id": "union",
+      "title": "Overlapping union members",
+      "source": "union.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 17,
+      "original_sha256": "5aef8626bfe19ac119230a8a7c0e626d1e45200c00c470b9e7e425fb2f9b649c",
+      "source_sha256": "2e0d57d85b3060da03e6abf518335ab8795362f4e331fdb21e88a6d6a89cf73b",
+      "adaptations": [
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n\n",
+          "contains": [
+            "Size of 'sample' union = 4",
+            "50"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "union-array",
+      "title": "Union with a character array",
+      "source": "union-array.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 5,
+      "article_line": 98,
+      "original_sha256": "7d27cd686a4aff7fd8b8def501019862683bfab0049a7684bca65c3c958f9de2",
+      "source_sha256": "d892607102d8f79578689abc34f1b6db37120c0326aa532a65e524db215ff726",
+      "adaptations": [
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n\n",
+          "contains": [
+            "Size of 'sample' union = 20",
+            "value= 50",
+            "value= hello world",
+            "value= A"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "bitfield-size",
+      "title": "Bitfield storage size",
+      "source": "bitfield-size.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 12,
+      "article_line": 233,
+      "original_sha256": "1ed8413e0bfed9ecc0087eccac4557f6ad5ea0f2e01336ff408464409925974b",
+      "source_sha256": "1ed8413e0bfed9ecc0087eccac4557f6ad5ea0f2e01336ff408464409925974b",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "status1 : 8",
+            "status2 : 4"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "bitfield-overflow",
+      "title": "Truncation to three bits",
+      "source": "bitfield-overflow.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 14,
+      "article_line": 262,
+      "original_sha256": "82ea3e651b36d9b64b8bf2b2bae8ae0c7dbf22f97e74c9f150430cc2d8bb3dbe",
+      "source_sha256": "4439b1d63799558057eaeb43dd839d32cd775d79392ffb6525fd70a60b5993bd",
+      "adaptations": [
+        "Remove the first of two duplicate declarations of Age."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "Age.age : 4",
+            "Age.age : 7",
+            "Age.age : 0"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "defines",
+      "title": "Preprocessor macros",
+      "source": "defines.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 19,
+      "article_line": 385,
+      "original_sha256": "1393159336b73160bf9e8dce063b2af9de8d832f06e527e069c2d3f69ef8a719",
+      "source_sha256": "2920e2d477e780a71476ee966ad1701ae77ca01ce041dff8c0d18842a85fbbd2",
+      "adaptations": [
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "4\n8\n\n",
+          "contains": [
+            "SUM = 12",
+            "> MAX"
+          ],
+          "args": []
+        },
+        {
+          "stdin": "2\n3\n\n",
+          "contains": [
+            "SUM = 5"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    "Unions",
+    "Bitfields",
+    "Defines"
+  ],
+  "walkthrough_validation": "pending"
+}

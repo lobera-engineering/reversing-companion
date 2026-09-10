@@ -1,0 +1,11 @@
+--- original/format-leak.c
++++ format-leak.c
+@@ -4,7 +4,7 @@
+ {
+     char name[200];
+     printf(input);
+-    printf("\n")
++    printf("\n");
+     gets(name);
+     printf("Hi there %s !!\n",name);
+ }

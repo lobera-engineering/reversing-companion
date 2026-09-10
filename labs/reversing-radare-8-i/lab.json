@@ -1,0 +1,366 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-8-i",
+  "source_url": "https://artik.blue/reversing-radare-8-i",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "original/crackme0x00",
+  "default": "crackme0x00",
+  "examples": [
+    {
+      "id": "crackme0x00",
+      "title": "IOLI crackme0x00",
+      "kind": "binary",
+      "language": "binary",
+      "source": "original/crackme0x00",
+      "platform": "linux",
+      "bits": 32,
+      "source_url": "https://raw.githubusercontent.com/radareorg/radare2book/5504edf6734f03f1d761288f58422ee6afbf9d3d/crackmes/ioli/IOLI-crackme.tar.gz",
+      "original_sha256": "3aed9a3821134a2ab1d69cb455e5e9d80bb651a1c97af04cdba4f3bb0adaa37b",
+      "source_sha256": "3aed9a3821134a2ab1d69cb455e5e9d80bb651a1c97af04cdba4f3bb0adaa37b",
+      "adaptations": [
+        "The working copy receives the private 32-bit loader path; the original ELF is retained unchanged."
+      ],
+      "cases": [
+        {
+          "stdin": "0\n",
+          "contains": [
+            "Invalid Password!"
+          ],
+          "args": []
+        },
+        {
+          "stdin": "250382\n",
+          "contains": [
+            "Password OK"
+          ],
+          "args": []
+        }
+      ],
+      "fixtures": {},
+      "validation": "pending"
+    },
+    {
+      "id": "crackme0x01",
+      "title": "IOLI crackme0x01",
+      "kind": "binary",
+      "language": "binary",
+      "source": "original/crackme0x01",
+      "platform": "linux",
+      "bits": 32,
+      "source_url": "https://raw.githubusercontent.com/radareorg/radare2book/5504edf6734f03f1d761288f58422ee6afbf9d3d/crackmes/ioli/IOLI-crackme.tar.gz",
+      "original_sha256": "081c706bb2ec4b3556409990abe5d443f25be39bcc79dc9303d52e55a52c846e",
+      "source_sha256": "081c706bb2ec4b3556409990abe5d443f25be39bcc79dc9303d52e55a52c846e",
+      "adaptations": [
+        "The working copy receives the private 32-bit loader path; the original ELF is retained unchanged."
+      ],
+      "cases": [
+        {
+          "stdin": "0\n",
+          "contains": [
+            "Invalid Password!"
+          ],
+          "args": []
+        },
+        {
+          "stdin": "5274\n",
+          "contains": [
+            "Password OK"
+          ],
+          "args": []
+        }
+      ],
+      "fixtures": {},
+      "validation": "pending"
+    },
+    {
+      "id": "crackme0x02",
+      "title": "IOLI crackme0x02",
+      "kind": "binary",
+      "language": "binary",
+      "source": "original/crackme0x02",
+      "platform": "linux",
+      "bits": 32,
+      "source_url": "https://raw.githubusercontent.com/radareorg/radare2book/5504edf6734f03f1d761288f58422ee6afbf9d3d/crackmes/ioli/IOLI-crackme.tar.gz",
+      "original_sha256": "90ec4d354b34bbb4369aa1c5023d4773b84f7ce5ed32e2504d8dc81beae444d9",
+      "source_sha256": "90ec4d354b34bbb4369aa1c5023d4773b84f7ce5ed32e2504d8dc81beae444d9",
+      "adaptations": [
+        "The working copy receives the private 32-bit loader path; the original ELF is retained unchanged."
+      ],
+      "cases": [
+        {
+          "stdin": "0\n",
+          "contains": [
+            "Invalid Password!"
+          ],
+          "args": []
+        },
+        {
+          "stdin": "338724\n",
+          "contains": [
+            "Password OK"
+          ],
+          "args": []
+        }
+      ],
+      "fixtures": {},
+      "validation": "pending"
+    },
+    {
+      "id": "crackme0x03",
+      "title": "IOLI crackme0x03",
+      "kind": "binary",
+      "language": "binary",
+      "source": "original/crackme0x03",
+      "platform": "linux",
+      "bits": 32,
+      "source_url": "https://raw.githubusercontent.com/radareorg/radare2book/5504edf6734f03f1d761288f58422ee6afbf9d3d/crackmes/ioli/IOLI-crackme.tar.gz",
+      "original_sha256": "8700fb75d437186af3ba1b1042d9ccec7eec71c1d0e3464ac16b74f0e3835d19",
+      "source_sha256": "8700fb75d437186af3ba1b1042d9ccec7eec71c1d0e3464ac16b74f0e3835d19",
+      "adaptations": [
+        "The working copy receives the private 32-bit loader path; the original ELF is retained unchanged."
+      ],
+      "cases": [
+        {
+          "stdin": "0\n",
+          "contains": [
+            "Invalid Password!"
+          ],
+          "args": []
+        },
+        {
+          "stdin": "338724\n",
+          "contains": [
+            "Password OK"
+          ],
+          "args": []
+        }
+      ],
+      "fixtures": {},
+      "validation": "pending"
+    },
+    {
+      "id": "crackme0x04",
+      "title": "IOLI crackme0x04",
+      "kind": "binary",
+      "language": "binary",
+      "source": "original/crackme0x04",
+      "platform": "linux",
+      "bits": 32,
+      "source_url": "https://raw.githubusercontent.com/radareorg/radare2book/5504edf6734f03f1d761288f58422ee6afbf9d3d/crackmes/ioli/IOLI-crackme.tar.gz",
+      "original_sha256": "e76a675caadef4d148866d063000eb0252528792d658cb270bcd1ea287f17261",
+      "source_sha256": "e76a675caadef4d148866d063000eb0252528792d658cb270bcd1ea287f17261",
+      "adaptations": [
+        "The working copy receives the private 32-bit loader path; the original ELF is retained unchanged."
+      ],
+      "cases": [
+        {
+          "stdin": "0\n",
+          "contains": [
+            "Password Incorrect!"
+          ],
+          "args": []
+        },
+        {
+          "stdin": "69\n",
+          "contains": [
+            "Password OK"
+          ],
+          "args": []
+        }
+      ],
+      "fixtures": {},
+      "validation": "pending"
+    },
+    {
+      "id": "crackme0x05",
+      "title": "IOLI crackme0x05",
+      "kind": "binary",
+      "language": "binary",
+      "source": "original/crackme0x05",
+      "platform": "linux",
+      "bits": 32,
+      "source_url": "https://raw.githubusercontent.com/radareorg/radare2book/5504edf6734f03f1d761288f58422ee6afbf9d3d/crackmes/ioli/IOLI-crackme.tar.gz",
+      "original_sha256": "65c61e5dfd016ef273b2735aba13078c40172f5787d981bffa43438a493670a3",
+      "source_sha256": "65c61e5dfd016ef273b2735aba13078c40172f5787d981bffa43438a493670a3",
+      "adaptations": [
+        "The working copy receives the private 32-bit loader path; the original ELF is retained unchanged."
+      ],
+      "cases": [
+        {
+          "stdin": "0\n",
+          "contains": [
+            "Password Incorrect!"
+          ],
+          "args": []
+        },
+        {
+          "stdin": "970\n",
+          "contains": [
+            "Password OK"
+          ],
+          "args": []
+        }
+      ],
+      "fixtures": {},
+      "validation": "pending"
+    },
+    {
+      "id": "crackme0x06",
+      "title": "IOLI crackme0x06",
+      "kind": "binary",
+      "language": "binary",
+      "source": "original/crackme0x06",
+      "platform": "linux",
+      "bits": 32,
+      "source_url": "https://raw.githubusercontent.com/radareorg/radare2book/5504edf6734f03f1d761288f58422ee6afbf9d3d/crackmes/ioli/IOLI-crackme.tar.gz",
+      "original_sha256": "4608b28e4df8b0e9769b454702d105cc07441c326554d5c37c996b0b517e4a7f",
+      "source_sha256": "4608b28e4df8b0e9769b454702d105cc07441c326554d5c37c996b0b517e4a7f",
+      "adaptations": [
+        "The working copy receives the private 32-bit loader path; the original ELF is retained unchanged."
+      ],
+      "cases": [
+        {
+          "stdin": "0\n",
+          "contains": [
+            "Password Incorrect!"
+          ],
+          "args": [],
+          "env": {
+            "LOLO": "1"
+          }
+        },
+        {
+          "stdin": "970\n",
+          "contains": [
+            "Password OK"
+          ],
+          "args": [],
+          "env": {
+            "LOLO": "1"
+          }
+        }
+      ],
+      "fixtures": {},
+      "validation": "pending"
+    },
+    {
+      "id": "crackme0x07",
+      "title": "IOLI crackme0x07",
+      "kind": "binary",
+      "language": "binary",
+      "source": "original/crackme0x07",
+      "platform": "linux",
+      "bits": 32,
+      "source_url": "https://raw.githubusercontent.com/radareorg/radare2book/5504edf6734f03f1d761288f58422ee6afbf9d3d/crackmes/ioli/IOLI-crackme.tar.gz",
+      "original_sha256": "eff7dff758b8b0234f2a1d5d413df7bb1ea30834e79d8cea1a4f0a2cd20a25f6",
+      "source_sha256": "eff7dff758b8b0234f2a1d5d413df7bb1ea30834e79d8cea1a4f0a2cd20a25f6",
+      "adaptations": [
+        "The working copy receives the private 32-bit loader path; the original ELF is retained unchanged."
+      ],
+      "cases": [
+        {
+          "stdin": "0\n",
+          "contains": [
+            "Password Incorrect!"
+          ],
+          "args": [],
+          "env": {
+            "LOLO": "1"
+          }
+        },
+        {
+          "stdin": "970\n",
+          "contains": [
+            "Password OK"
+          ],
+          "args": [],
+          "env": {
+            "LOLO": "1"
+          }
+        }
+      ],
+      "fixtures": {},
+      "validation": "pending"
+    },
+    {
+      "id": "crackme0x08",
+      "title": "IOLI crackme0x08",
+      "kind": "binary",
+      "language": "binary",
+      "source": "original/crackme0x08",
+      "platform": "linux",
+      "bits": 32,
+      "source_url": "https://raw.githubusercontent.com/radareorg/radare2book/5504edf6734f03f1d761288f58422ee6afbf9d3d/crackmes/ioli/IOLI-crackme.tar.gz",
+      "original_sha256": "b92b792ad1804692f01d6f281969aa479182f072bee7d2c2cb24ef2ddcca259e",
+      "source_sha256": "b92b792ad1804692f01d6f281969aa479182f072bee7d2c2cb24ef2ddcca259e",
+      "adaptations": [
+        "The working copy receives the private 32-bit loader path; the original ELF is retained unchanged."
+      ],
+      "cases": [
+        {
+          "stdin": "0\n",
+          "contains": [
+            "Password Incorrect!"
+          ],
+          "args": [],
+          "env": {
+            "LOLO": "1"
+          }
+        },
+        {
+          "stdin": "970\n",
+          "contains": [
+            "Password OK"
+          ],
+          "args": [],
+          "env": {
+            "LOLO": "1"
+          }
+        }
+      ],
+      "fixtures": {},
+      "validation": "pending"
+    },
+    {
+      "id": "crackme0x09",
+      "title": "IOLI crackme0x09",
+      "kind": "binary",
+      "language": "binary",
+      "source": "original/crackme0x09",
+      "platform": "linux",
+      "bits": 32,
+      "source_url": "https://raw.githubusercontent.com/radareorg/radare2book/5504edf6734f03f1d761288f58422ee6afbf9d3d/crackmes/ioli/IOLI-crackme.tar.gz",
+      "original_sha256": "29a8336b5c3695edfbaccf338cfcc7d9874c2ca455a7c2547268508254cc5145",
+      "source_sha256": "29a8336b5c3695edfbaccf338cfcc7d9874c2ca455a7c2547268508254cc5145",
+      "adaptations": [
+        "The working copy receives the private 32-bit loader path; the original ELF is retained unchanged."
+      ],
+      "cases": [
+        {
+          "stdin": "0\n",
+          "contains": [
+            "Password Incorrect!"
+          ],
+          "args": [],
+          "env": {
+            "LOLO": "1"
+          }
+        },
+        {
+          "stdin": "970\n",
+          "contains": [
+            "Password OK"
+          ],
+          "args": [],
+          "env": {
+            "LOLO": "1"
+          }
+        }
+      ],
+      "fixtures": {},
+      "validation": "pending"
+    }
+  ],
+  "sections": [],
+  "walkthrough_validation": "pending"
+}

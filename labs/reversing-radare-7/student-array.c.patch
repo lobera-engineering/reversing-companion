@@ -1,0 +1,11 @@
+--- original/student-array.c
++++ student-array.c
+@@ -1,7 +1,7 @@
+ #include <stdio.h>
+ 
+ const int MAX = 20;
+-"td struct stud { char fletter; int age; float mark;};"
++/* radare2 command from the article: td struct stud { char fletter; int age; float mark;}; */
+ struct stud
+ 	{
+ 		char fletter;

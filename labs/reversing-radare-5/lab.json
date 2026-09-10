@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-5",
+  "source_url": "https://artik.blue/reversing-radare-5",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "float-cast.c",
+  "default": "float-cast",
+  "examples": [
+    {
+      "id": "float-cast",
+      "title": "Cast float to int",
+      "source": "float-cast.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 19,
+      "original_sha256": "5b4e62dee8734a624251b4b9c969430a2163a2563796a4dbc3ba1f147615d632",
+      "source_sha256": "5b4e62dee8734a624251b4b9c969430a2163a2563796a4dbc3ba1f147615d632",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "5\n"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "char-cast",
+      "title": "Cast char to int",
+      "source": "char-cast.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 6,
+      "article_line": 167,
+      "original_sha256": "ab877d11f28ea0bbc32fb5a099c4b871d5efd3190347797c76dc22763351244a",
+      "source_sha256": "ab877d11f28ea0bbc32fb5a099c4b871d5efd3190347797c76dc22763351244a",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "97"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "promotion",
+      "title": "Integer promotion",
+      "source": "promotion.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 9,
+      "article_line": 220,
+      "original_sha256": "b7d6da9848f4b7bc91a388ee284b7b49aa87f3a20e10cf45e81f87d87ddc8b24",
+      "source_sha256": "b7d6da9848f4b7bc91a388ee284b7b49aa87f3a20e10cf45e81f87d87ddc8b24",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "97\n97"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [],
+  "walkthrough_validation": "pending"
+}

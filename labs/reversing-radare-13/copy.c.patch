@@ -1,0 +1,20 @@
+--- original/copy.c
++++ copy.c
+@@ -1,3 +1,8 @@
++#include <sys/sendfile.h>
++#include <sys/stat.h>
++#include <errno.h>
++#include <unistd.h>
++#include <stdio.h>
+ #include <fcntl.h>
+ #include <stdlib.h>
+ 
+@@ -12,7 +17,7 @@
+         perror("foo");
+         exit(2);
+     }
+-    if((ffout = open("bar", O_WRONLY | O_CREAT, 0644)) < 0){
++    if((fout = open("bar", O_WRONLY | O_CREAT, 0644)) < 0){
+         perror("bar");
+         exit(2);
+     }

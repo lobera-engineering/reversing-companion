@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-4-ii",
+  "source_url": "https://artik.blue/reversing-radare-4-ii",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "scanf.c",
+  "default": "scanf",
+  "examples": [
+    {
+      "id": "scanf",
+      "title": "Read a string",
+      "source": "scanf.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 17,
+      "original_sha256": "d662ed4f8216ef4fce5d5854e853e794a4f5192e020b4be2e5baea7ac99ca257",
+      "source_sha256": "a2c4943756dc9a3ecede2051cb7ad9b626e36383b86bab899c03cb844118930b",
+      "adaptations": [
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n\n\n",
+          "contains": [
+            "Hi, Artik"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "gets",
+      "title": "Unbounded gets",
+      "source": "gets.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 4,
+      "article_line": 126,
+      "original_sha256": "bcd3419e7d8c60346b1159a0083cf22f4cf2a66e18735ff6fc6f0baa53d54479",
+      "source_sha256": "2c5e275e12b16d631950342ed3dd7fb6de08159ca652efdeaeadb4479d1e9622",
+      "adaptations": [
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik Blue\n\n",
+          "contains": [
+            "Ho, Artik Blue"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "strlen",
+      "title": "Measure string length",
+      "source": "strlen.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 8,
+      "article_line": 233,
+      "original_sha256": "8f18bdfc32edd49294806b9709e69a011a9944e64ec3956e82dbf0f25251783f",
+      "source_sha256": "6ae923de5451db0ff85248d81d3c4b047fef7e238aa3d920c908201050fc0f1e",
+      "adaptations": [
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik Blue\n\n",
+          "contains": [
+            "Length: 10 chars"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "strncpy-unterminated",
+      "title": "Observe a missing terminator",
+      "source": "strncpy-unterminated.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 13,
+      "article_line": 334,
+      "original_sha256": "afb3837d35232a23318281e69c3792eec2a881d334567056d3ae2c9b7cb055ad",
+      "source_sha256": "afb3837d35232a23318281e69c3792eec2a881d334567056d3ae2c9b7cb055ad",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Pau\n\n",
+          "contains": [
+            "Copied string =  Pau",
+            "4 first chars = Pau"
+          ],
+          "args": []
+        }
+      ],
+      "sanitizer": {
+        "stdin": "ArtikBlue\n\n",
+        "contains": "stack-buffer-overflow"
+      }
+    },
+    {
+      "id": "strncpy-terminated",
+      "title": "Terminate a copied string",
+      "source": "strncpy-terminated.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 22,
+      "article_line": 553,
+      "original_sha256": "3fde6a3901095a9232a7c1e820b1634702a668694b42f931dcfef2b0c907def6",
+      "source_sha256": "3fde6a3901095a9232a7c1e820b1634702a668694b42f931dcfef2b0c907def6",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik Blue\n\n",
+          "contains": [
+            "Copied string = Artik Blue",
+            "4 FIRST LETTERS Arti"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    "A refresher on char arrays",
+    "Puts and gets",
+    "Strlen",
+    "The string library"
+  ],
+  "walkthrough_validation": "pending"
+}

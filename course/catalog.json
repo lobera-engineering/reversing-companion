@@ -1,0 +1,627 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/artikblue/artikblue.github.io",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source_index": "_pages/reversing.md",
+  "lessons": [
+    {
+      "url": "https://artik.blue/reversing-radare2-1",
+      "title": "Reversing x32/x64 with radare2 - 1 (intro)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare2-1",
+      "order": 1,
+      "aliases": [
+        "1",
+        "intro",
+        "hello"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 1",
+      "source_path": "_posts/2020-01-13-reversing-radare2-1.md",
+      "source_sha256": "66a610c01ebaa7bb0543710371166a7f45279a016448188d6c47e1f3cd607bc3",
+      "content": "course/posts/2020-01-13-reversing-radare2-1.md",
+      "lab": "hello",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 1,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare2-2",
+      "title": "Reversing x32/x64 with radare2 - 2 (conditionals)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare2-2",
+      "order": 2,
+      "aliases": [
+        "2"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - Exploiting basic Buffer Overflows",
+      "source_path": "_posts/2020-01-20-reversing-radare2-2.md",
+      "source_sha256": "079d399005ca3df0b34c9881b659d6c0c28ccfab391672d7c01f5992140a7c6e",
+      "content": "course/posts/2020-01-20-reversing-radare2-2.md",
+      "lab": "reversing-radare2-2",
+      "validation": "pending_validation",
+      "issues": [
+        "The index describes conditionals, but this source contains buffer overflows. Original retained pending correction."
+      ],
+      "examples": 1,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-3",
+      "title": "Reversing x32/x64 with radare2 - 3 (funcs, cases and loops)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-3",
+      "order": 3,
+      "aliases": [
+        "3"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 3 (funcs, cases and loops)",
+      "source_path": "_posts/2020-04-26-reversing-radare-3.md",
+      "source_sha256": "8d95141f64bcb25231d5f1b679f3c4d81df5d677217daca7fab1fda67c261872",
+      "content": "course/posts/2020-04-26-reversing-radare-3.md",
+      "lab": "reversing-radare-3",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 6,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-4",
+      "title": "Reversing x32/x64 with radare2 - 4 - I (arrays and strings)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-4",
+      "order": 4,
+      "aliases": [
+        "4"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 4 (arrays and strings)",
+      "source_path": "_posts/2020-04-29-reversing-radare-4.md",
+      "source_sha256": "81721c137646f9e9eb2469040296e0a91f6bb2dd8cdbf2d382e455b446db879c",
+      "content": "course/posts/2020-04-29-reversing-radare-4.md",
+      "lab": "reversing-radare-4",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 6,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-4-ii",
+      "title": "Reversing x32/x64 with radare2 - 4 - II (more strings)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-4-ii",
+      "order": 5,
+      "aliases": [
+        "4-ii"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 4 - II (more strings)",
+      "source_path": "_posts/2020-04-30-reversing-radare-4-ii.md",
+      "source_sha256": "2ba4683144d4989405ba8a9a346442a6df25e4eb4b07d582faf0598257a9082d",
+      "content": "course/posts/2020-04-30-reversing-radare-4-ii.md",
+      "lab": "reversing-radare-4-ii",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 5,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-5",
+      "title": "Reversing x32/x64 with radare2 - 5 (var types and casting)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-5",
+      "order": 6,
+      "aliases": [
+        "5"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 5 (var types and casting)",
+      "source_path": "_posts/2020-05-01-reversing-radare-5.md",
+      "source_sha256": "9eca53e9cb2860e7ca55f32810d4ea98de11255466f1e06ac8b5cfd644386a3f",
+      "content": "course/posts/2020-05-01-reversing-radare-5.md",
+      "lab": "reversing-radare-5",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 3,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-6",
+      "title": "Reversing x32/x64 with radare2 - 6 (multi dimensional arrays and structs)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-6",
+      "order": 7,
+      "aliases": [
+        "6",
+        "structs",
+        "estructuras"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 6 (2d arrays and structs)",
+      "source_path": "_posts/2020-05-02-reversing-radare-6.md",
+      "source_sha256": "fb1be451c14913757bd20ea4642fb709ee303fb4f118a06dd10c2b2053b7567d",
+      "content": "course/posts/2020-05-02-reversing-radare-6.md",
+      "lab": "structs",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 3,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-7",
+      "title": "Reversing x32/x64 with radare2 - 7 (struct arrays, r2pm and patching)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-7",
+      "order": 8,
+      "aliases": [
+        "7"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 7 (struct arrays, r2pm and patching)",
+      "source_path": "_posts/2020-05-04-reversing-radare-7.md",
+      "source_sha256": "d75c2ddb253e0cf59dc8fc64e52f88f70cca4414f1635e41e70d758ccc44664f",
+      "content": "course/posts/2020-05-04-reversing-radare-7.md",
+      "lab": "reversing-radare-7",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 1,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-8",
+      "title": "Reversing x32/x64 with radare2 - 8 - I (files: read, write, seek and some heaps)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-8",
+      "order": 9,
+      "aliases": [
+        "8"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 9 (files; read, write, seek and some heaps :O)",
+      "source_path": "_posts/2020-05-05-reversing-radare-8.md",
+      "source_sha256": "b90ae08b24caa049f9105bf2f14f910b71834ad377d4de4c1e146c32f2069bc7",
+      "content": "course/posts/2020-05-05-reversing-radare-8.md",
+      "lab": "reversing-radare-8",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 4,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-8-i",
+      "title": "Reversing x32/x64 with radare2 - 8 - II (crackmes)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-8-i",
+      "order": 10,
+      "aliases": [
+        "8-i"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 8 (start doing crackmes now!)",
+      "source_path": "_posts/2020-05-04-reversing-radare-8-i.md",
+      "source_sha256": "bdb12c294df69b2c4dfd27fcbe35859bdf8ae8e03257c39c63a05c921643ce0e",
+      "content": "course/posts/2020-05-04-reversing-radare-8-i.md",
+      "lab": "reversing-radare-8-i",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 10,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-9",
+      "title": "Reversing x32/x64 with radare2 - 9 (pointers and dynamic memory)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-9",
+      "order": 11,
+      "aliases": [
+        "9"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 10 (pointers and dynamic memory)",
+      "source_path": "_posts/2020-05-06-reversing-radare-9.md",
+      "source_sha256": "959d98d3c22e40da849857a6d7794350d67799baf986deb786412929548b73d8",
+      "content": "course/posts/2020-05-06-reversing-radare-9.md",
+      "lab": "reversing-radare-9",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 3,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-10",
+      "title": "Reversing x32/x64 with radare2 - 10 (more pointers and dynamic structs)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-10",
+      "order": 12,
+      "aliases": [
+        "10"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 11 (more pointers and dynamic structs)",
+      "source_path": "_posts/2020-05-07-reversing-radare-10.md",
+      "source_sha256": "6ba38a6041f488bf1284891c44aec8eb3d397025a79026174d61e3f5b679da9b",
+      "content": "course/posts/2020-05-07-reversing-radare-10.md",
+      "lab": "reversing-radare-10",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 5,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-11",
+      "title": "Reversing x32/x64 with radare2 - 11 (linked lists, enums, bitwise operations and r2pipe)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-11",
+      "order": 13,
+      "aliases": [
+        "11"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 12 (linked lists, enums, bitwise operations and r2pipe)",
+      "source_path": "_posts/2020-05-11-reversing-radare-11.md",
+      "source_sha256": "7781acce190c9f30548bf7a0f8e6e47dfeb0f343cb8191c961a628e2b057e462",
+      "content": "course/posts/2020-05-11-reversing-radare-11.md",
+      "lab": "reversing-radare-11",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 5,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-12",
+      "title": "Reversing x32/x64 with radare2 - 12 (defines, unions and bitmaps)",
+      "group": "Reversing basic C code (x86)",
+      "id": "reversing-radare-12",
+      "order": 14,
+      "aliases": [
+        "12"
+      ],
+      "source_title": "Reverse engineering 32 and 64 bits binaries with Radare2 - 13 (defines, unions and bitmaps)",
+      "source_path": "_posts/2020-05-13-reversing-radare-12.md",
+      "source_sha256": "d798474d38c6d09fa0e5e2701aa477c7ccc76e53849168a1b2d210911b56dd9c",
+      "content": "course/posts/2020-05-13-reversing-radare-12.md",
+      "lab": "reversing-radare-12",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 5,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-13",
+      "title": "Reverse engineering x64 binaries with Radare2 - 13 (linux systems programming: theory, syscalls, files and ESIL)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-13",
+      "order": 15,
+      "aliases": [
+        "13"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - 14 - I (linux systems programming; theory, syscalls, files and ESIL)",
+      "source_path": "_posts/2020-05-15-reversing-radare-13.md",
+      "source_sha256": "cc9a9cb915ef54e2f68e4d36788f8d28c4ed1e2cab024344368b1e2262228595",
+      "content": "course/posts/2020-05-15-reversing-radare-13.md",
+      "lab": "reversing-radare-13",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 9,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-14",
+      "title": "Reverse engineering x64 binaries with Radare2 - 14 (the windows api: theory, helloworld and files)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-14",
+      "order": 16,
+      "aliases": [
+        "14"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - 15 (Windows fundamentals; Intro to WinApi and file management)",
+      "source_path": "_posts/2020-05-25-reversing-radare-14.md",
+      "source_sha256": "a6db237402c57560d56043eeb5d719abf0e813914107c3d6d5226345590e4098",
+      "content": "course/posts/2020-05-25-reversing-radare-14.md",
+      "lab": "reversing-radare-14",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 7,
+      "platform": "windows"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-15",
+      "title": "Reverse engineering x64 binaries with Radare2 - 15 - I (unix sockets fundamentals)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-15",
+      "order": 17,
+      "aliases": [
+        "15"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - 16 (unix sockets fundamentals)",
+      "source_path": "_posts/2020-06-01-reversing-radare-15.md",
+      "source_sha256": "361904baa7c57b37893d1d5827da2ba307bd6be40fe982a74c1487dc44e656e5",
+      "content": "course/posts/2020-06-01-reversing-radare-15.md",
+      "lab": "reversing-radare-15",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 4,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-16",
+      "title": "Reverse engineering x64 binaries with Radare2 - 15 - II (more sockets, http emulation, radasm, ragg and shellcode)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-16",
+      "order": 18,
+      "aliases": [
+        "16"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - 16 - II (more sockets, http emulation, radasm, ragg and shellcode)",
+      "source_path": "_posts/2020-06-04-reversing-radare-16.md",
+      "source_sha256": "ad4c4117644e00ac54a72bae4a10c59b9283fdc6ded7e3f26f279b7d1cea6c14",
+      "content": "course/posts/2020-06-04-reversing-radare-16.md",
+      "lab": "reversing-radare-16",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 5,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-17",
+      "title": "Reverse engineering x64 binaries with Radare2 - 16 (winsock, udp C&C and file exfiltration through DNS)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-17",
+      "order": 19,
+      "aliases": [
+        "17"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - 17 (winsock, udp C&C and file exfiltration through DNS)",
+      "source_path": "_posts/2020-06-10-reversing-radare-17.md",
+      "source_sha256": "3325f1f2fdca486ba5e086ddf97b95d0c3412ea3aaa5b79432395c85d72c82c6",
+      "content": "course/posts/2020-06-10-reversing-radare-17.md",
+      "lab": "reversing-radare-17",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 6,
+      "platform": "windows"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-18",
+      "title": "Reverse engineering x64 binaries with Radare2 - 17 (More Winsock, Bind and reverse shells)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-18",
+      "order": 20,
+      "aliases": [
+        "18"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - 18 (Bind and reverse shells)",
+      "source_path": "_posts/2020-06-13-reversing-radare-18.md",
+      "source_sha256": "b9985d271969536d1067d8fd5187ec3b7e209efdce1e29f487377af7a00e3a0c",
+      "content": "course/posts/2020-06-13-reversing-radare-18.md",
+      "lab": "reversing-radare-18",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 2,
+      "platform": "windows"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-19",
+      "title": "Reverse engineering x64 binaries with Radare2 - 18 (unix encrypted bind shells over TLS)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-19",
+      "order": 21,
+      "aliases": [
+        "19"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - 19 (unix encrypted bind shells over TLS)",
+      "source_path": "_posts/2020-06-14-reversing-radare-19.md",
+      "source_sha256": "82417168a4fec69747a8ad0137220f8a15d12bb39dee132c6b0cc8d8b167ab17",
+      "content": "course/posts/2020-06-14-reversing-radare-19.md",
+      "lab": "reversing-radare-19",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 1,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-20",
+      "title": "Reverse engineering x64 binaries with Radare2 - 19 (Exploiting basic Buffer Overflows)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-20",
+      "order": 22,
+      "aliases": [
+        "20"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - Exploiting basic Buffer Overflows",
+      "source_path": "_posts/2022-06-12-reversing-radare-20.md",
+      "source_sha256": "6e8f37f485533bbe2d55b9fc1f46467594c797c6df8c5bc25a3af98211b02937",
+      "content": "course/posts/2022-06-12-reversing-radare-20.md",
+      "lab": "reversing-radare-20",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 1,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-21",
+      "title": "Reverse engineering x64 binaries with Radare2 - 20 (Bypassing DEP with simple ROP Chains)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-21",
+      "order": 23,
+      "aliases": [
+        "21"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - Bypasssing DEP with simple ROP Chains",
+      "source_path": "_posts/2022-06-14-reversing-radare-21.md",
+      "source_sha256": "60d8ae481e25370838443774d30c9bdec225d6df790282208195ddc31d9f4824",
+      "content": "course/posts/2022-06-14-reversing-radare-21.md",
+      "lab": "reversing-radare-21",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 2,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-22",
+      "title": "Reverse engineering x64 binaries with Radare2 - 21 (Enabling code execution on stack)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-22",
+      "order": 24,
+      "aliases": [
+        "22"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - Enabling code execution on Stack",
+      "source_path": "_posts/2022-06-19-reversing-radare-22.md",
+      "source_sha256": "04040dc8de3de2db48a83565fcaa3892cc6a8823e193b499e1f9802d8129001a",
+      "content": "course/posts/2022-06-19-reversing-radare-22.md",
+      "lab": "reversing-radare-22",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 2,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-23",
+      "title": "Reverse engineering x64 binaries with Radare2 - 22 (Defeating stack canaries)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-23",
+      "order": 25,
+      "aliases": [
+        "23"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - Defeating stack canaries",
+      "source_path": "_posts/2022-06-26-reversing-radare-23.md",
+      "source_sha256": "50e5b007b69e7f2b37a5864c82755444a223059c70b94e545fcbbe9ec55e26cd",
+      "content": "course/posts/2022-06-26-reversing-radare-23.md",
+      "lab": "reversing-radare-23",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 3,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/reversing-radare-24",
+      "title": "Reverse engineering x64 binaries with Radare2 - 23 (Dealing with aslr)",
+      "group": "Advanced topics on reversing C code (Windows and Unix)",
+      "id": "reversing-radare-24",
+      "order": 26,
+      "aliases": [
+        "24"
+      ],
+      "source_title": "Reverse engineering x64 binaries with Radare2 - Dealing with ASLR",
+      "source_path": "_posts/2022-06-26-reversing-radare-24.md",
+      "source_sha256": "ec0d83d0b2a1a2f14df96e7328e9fa7bd3d4121d32185ea6cad2a4971c6ebce7",
+      "content": "course/posts/2022-06-26-reversing-radare-24.md",
+      "lab": "reversing-radare-24",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 5,
+      "platform": "linux"
+    },
+    {
+      "url": "https://artik.blue/malware1",
+      "title": "Malware analysis with IDA/Radare2 - C# Malware (Ziraat)",
+      "group": "Malware analysis",
+      "id": "malware1",
+      "order": 27,
+      "aliases": [],
+      "source_title": "Malware analysis with IDA/Radare2 - C# Malware (Ziraat)",
+      "source_path": "_posts/2022-06-27-malware1.md",
+      "source_sha256": "80de9c42c4e6972100b0178d4e9301dab2a724f59572b1a32c1160d28db37e8d",
+      "content": "course/posts/2022-06-27-malware1.md",
+      "lab": "malware1",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 0,
+      "platform": "windows"
+    },
+    {
+      "url": "https://artik.blue/malware2",
+      "title": "Malware analysis with IDA/Radare2 - Analyzing maldocs (Emotet Dropper)",
+      "group": "Malware analysis",
+      "id": "malware2",
+      "order": 28,
+      "aliases": [],
+      "source_title": "Malware analysis with IDA/Radare2 - Analyzing maldocs (Emotet Dropper)",
+      "source_path": "_posts/2022-07-03-malware2.md",
+      "source_sha256": "b874e67eef56a337ce0715e5d0aa536e4330dafbfb0f61d5dbbf783becf9ec99",
+      "content": "course/posts/2022-07-03-malware2.md",
+      "lab": "malware2",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 0,
+      "platform": "windows"
+    },
+    {
+      "url": "https://artik.blue/malware3",
+      "title": "Malware analysis with IDA/Radare2 - Basic unpacking (Dridex)",
+      "group": "Malware analysis",
+      "id": "malware3",
+      "order": 29,
+      "aliases": [],
+      "source_title": "Malware analysis with IDA/Radare2 - Basic Unpacking (Dridex first stage)",
+      "source_path": "_posts/2022-07-09-malware3.md",
+      "source_sha256": "795203116f3a08d415b8b9708763eab12351dc142bc547a36afea91c8bc0cb07",
+      "content": "course/posts/2022-07-09-malware3.md",
+      "lab": "malware3",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 0,
+      "platform": "windows"
+    },
+    {
+      "url": "https://artik.blue/malware4",
+      "title": "Malware analysis with IDA/Radare2 - Multiple unpacking (Ramnit)",
+      "group": "Malware analysis",
+      "id": "malware4",
+      "order": 30,
+      "aliases": [],
+      "source_title": "Malware analysis with IDA/Radare2 - Multiple unpacking (Ramnit worm)",
+      "source_path": "_posts/2022-07-12-malware4.md",
+      "source_sha256": "9ce9f124fe8892f9f5e1e7fb9ac481f10697b6ebaa96c06202a84a2957adc95d",
+      "content": "course/posts/2022-07-12-malware4.md",
+      "lab": "malware4",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 0,
+      "platform": "windows"
+    },
+    {
+      "url": "https://artik.blue/malware5",
+      "title": "Malware analysis with IDA/Radare2 - From unpacking to config extraction (IceID)",
+      "group": "Malware analysis",
+      "id": "malware5",
+      "order": 31,
+      "aliases": [],
+      "source_title": "Malware analysis with IDA/Radare2 2 - From unpacking to config extraction to full reversing (IceID Loader)",
+      "source_path": "_posts/2022-07-15-malware5.md",
+      "source_sha256": "f92c82bce57f3ed89005782b15cb63708531555d1ad15af3e020862d5c456bd2",
+      "content": "course/posts/2022-07-15-malware5.md",
+      "lab": "malware5",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 0,
+      "platform": "windows"
+    },
+    {
+      "url": "https://artik.blue/malware6",
+      "title": "Malware analysis with IDA/Radare2 - DLL injection, the fundamentals",
+      "group": "Malware analysis",
+      "id": "malware6",
+      "order": 32,
+      "aliases": [],
+      "source_title": "Malware analysis with IDA/Radare2 - DLL Injection techniques, the fundamentals",
+      "source_path": "_posts/2022-08-01-malware6.md",
+      "source_sha256": "7b948778c2759d13f80354d6740d282e8e0e8f653e0ae18297da895afa1ee0ee",
+      "content": "course/posts/2022-08-01-malware6.md",
+      "lab": "malware6",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 2,
+      "platform": "windows"
+    },
+    {
+      "url": "https://artik.blue/malware7",
+      "title": "Malware analysis with IDA/Radare2 - PE injection, the fundamentals",
+      "group": "Malware analysis",
+      "id": "malware7",
+      "order": 33,
+      "aliases": [],
+      "source_title": "Malware analysis with IDA/Radare2 - PE Injection techniques, the fundamentals",
+      "source_path": "_posts/2022-08-23-malware7.md",
+      "source_sha256": "d44fd0ed1b0591e8c6221020515cede08e7bf5ac4ae04df0d31fd893fdc8f371",
+      "content": "course/posts/2022-08-23-malware7.md",
+      "lab": "malware7",
+      "validation": "pending_validation",
+      "issues": [],
+      "examples": 2,
+      "platform": "windows"
+    }
+  ]
+}

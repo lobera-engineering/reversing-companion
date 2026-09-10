@@ -1,0 +1,11 @@
+--- original/sendfile.c
++++ sendfile.c
+@@ -1,3 +1,8 @@
++#include <sys/sendfile.h>
++#include <sys/stat.h>
++#include <errno.h>
++#include <unistd.h>
++#include <stdio.h>
+ #include <fcntl.h>
+ #include <stdlib.h>
+ 

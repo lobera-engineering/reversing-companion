@@ -1,0 +1,98 @@
+{
+  "hermes": {
+    "repository": "https://github.com/NousResearch/hermes-agent.git",
+    "commit": "9e6c4100cbf5222fb473ecc2b51fd17874f6ee75"
+  },
+  "r2mcp": {
+    "repository": "https://github.com/radareorg/radare2-mcp.git",
+    "commit": "791d23880142801adf5fc0cf8791beb4cbba9505"
+  },
+  "radare2": {
+    "version": "6.2.2",
+    "packages": [
+      {
+        "name": "radare2_6.2.2_amd64.deb",
+        "sha256": "09234e4139bf8dfcbb7fc1fdb2519859ad516e63c19d3c27d92aaecdf463b1ad"
+      },
+      {
+        "name": "radare2-dev_6.2.2_amd64.deb",
+        "sha256": "cbc9278e90fde572df7dd721f22056515c8c28f63c2d0c6d44ab321b5f4e6f43"
+      }
+    ]
+  },
+  "additional_debs": [
+    {
+      "group": "mingw",
+      "name": "binutils-mingw-w64-x86-64_2.41.90.20240122-1ubuntu1+11.4_amd64.deb",
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/b/binutils-mingw-w64/binutils-mingw-w64-x86-64_2.41.90.20240122-1ubuntu1+11.4_amd64.deb",
+      "sha256": "28bfabbf64a68813a56360bca056072af9ff71ef4090a4b8a8a085afcda3e4dd"
+    },
+    {
+      "group": "mingw",
+      "name": "g++-mingw-w64-x86-64-posix_13.2.0-6ubuntu1+26.1_amd64.deb",
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/g/gcc-mingw-w64/g++-mingw-w64-x86-64-posix_13.2.0-6ubuntu1+26.1_amd64.deb",
+      "sha256": "52c3613f386e462ae71105d1a0b2a48d866ccb048ad253acff629c5a2291252d"
+    },
+    {
+      "group": "mingw",
+      "name": "gcc-mingw-w64-base_13.2.0-6ubuntu1+26.1_amd64.deb",
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/g/gcc-mingw-w64/gcc-mingw-w64-base_13.2.0-6ubuntu1+26.1_amd64.deb",
+      "sha256": "a30c07e807e9874ea93909448c5d6d37f9569ebe60ad32de8e490aad198538a3"
+    },
+    {
+      "group": "mingw",
+      "name": "gcc-mingw-w64-x86-64-posix-runtime_13.2.0-6ubuntu1+26.1_amd64.deb",
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/g/gcc-mingw-w64/gcc-mingw-w64-x86-64-posix-runtime_13.2.0-6ubuntu1+26.1_amd64.deb",
+      "sha256": "aca6b438e0b55b11cedcf1170a1ee26e7979e34192e34f6e6389e560908a5bfc"
+    },
+    {
+      "group": "mingw",
+      "name": "gcc-mingw-w64-x86-64-posix_13.2.0-6ubuntu1+26.1_amd64.deb",
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/g/gcc-mingw-w64/gcc-mingw-w64-x86-64-posix_13.2.0-6ubuntu1+26.1_amd64.deb",
+      "sha256": "0855fa1d4a618550faac3a3e4352aa3226833b28184ad3c3b496a68a22c4eda2"
+    },
+    {
+      "group": "mingw",
+      "name": "mingw-w64-common_11.0.1-3build1_all.deb",
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/m/mingw-w64/mingw-w64-common_11.0.1-3build1_all.deb",
+      "sha256": "4a42fd30fbc3838c58c929d8a4882682fc12408bb7a0e6cafa913c0f0a57c187"
+    },
+    {
+      "group": "mingw",
+      "name": "mingw-w64-x86-64-dev_11.0.1-3build1_all.deb",
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/m/mingw-w64/mingw-w64-x86-64-dev_11.0.1-3build1_all.deb",
+      "sha256": "018480a62907fcca19c6bf2975ae01f5c92c23dee8c3cf7a8355c10bf7d42c6f"
+    },
+    {
+      "group": "multilib",
+      "name": "libc6-i386_2.39-0ubuntu8.8_amd64.deb",
+      "url": "http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/libc6-i386_2.39-0ubuntu8.8_amd64.deb",
+      "sha256": "7c373e63a02bda5d8da4363a899c24622b1234f658b5fca78a9a4d8b1017b079"
+    },
+    {
+      "group": "multilib",
+      "name": "patchelf_0.18.0-1.1build1_amd64.deb",
+      "url": "http://archive.ubuntu.com/ubuntu/pool/universe/p/patchelf/patchelf_0.18.0-1.1build1_amd64.deb",
+      "sha256": "962a43e33cd56061522554898557a038ccbb8aa4e1e0f421b2d6f6adf1f80c60"
+    },
+    {
+      "group": "multilib",
+      "name": "libc6-dev-i386_2.39-0ubuntu8.8_amd64.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/g/glibc/libc6-dev-i386_2.39-0ubuntu8.8_amd64.deb",
+      "sha256": "b560b6f53e60ef83320c2c170d890074dcb4bdd077dcea03ff98a030ae9c635e"
+    },
+    {
+      "group": "multilib",
+      "name": "lib32gcc-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/g/gcc-13/lib32gcc-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb",
+      "sha256": "0850e0555c86f2ce7a954158eb47df42d7645bfa4f12f29ea2df76459c930ac0"
+    },
+    {
+      "group": "multilib",
+      "name": "lib32gcc-s1_14.2.0-4ubuntu2~24.04.1_amd64.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/main/g/gcc-14/lib32gcc-s1_14.2.0-4ubuntu2~24.04.1_amd64.deb",
+      "sha256": "1802dc75345ccce457b44110a3819ca74ff8c33fc62394a78d0e59a11c0cf770"
+    }
+  ],
+  "network_test_image": "python@sha256:8a7e7cc04fd3e2bd787f7f24e22d5d119aa590d429b50c95dfe12b3abe52f48b"
+}

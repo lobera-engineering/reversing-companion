@@ -1,0 +1,18 @@
+--- original/dns-file.c
++++ dns-file.c
+@@ -1,3 +1,4 @@
++#include "base64.h"
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <stddef.h>
+@@ -95,8 +96,8 @@
+     int err;
+     short totalBytesRead = 0;
+     int r = 0;
+-    int i = 0;
+-    int hFile = CreateFile(file   ,            // file to open
++    size_t i = 0;
++    HANDLE hFile = CreateFile(file   ,            // file to open
+                        GENERIC_READ,          // open for read
+                        FILE_SHARE_READ,       // share for read
+                        NULL,                  // default security

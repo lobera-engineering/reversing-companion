@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare2-2",
+  "source_url": "https://artik.blue/reversing-radare2-2",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "smart-server.c",
+  "default": "smart-server",
+  "examples": [
+    {
+      "id": "smart-server",
+      "title": "Stack overflow authentication server",
+      "source": "smart-server.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 1,
+      "article_line": 39,
+      "original_sha256": "e7f8d3921a167365103fd0dd82a15cec62adf2b36e5feadc65ace13139bd90ba",
+      "source_sha256": "e7f8d3921a167365103fd0dd82a15cec62adf2b36e5feadc65ace13139bd90ba",
+      "adaptations": [],
+      "cflags": [
+        "-fno-stack-protector"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [],
+      "network_check": "smart-server"
+    }
+  ],
+  "sections": [
+    "(stack) Buffer overflows",
+    "The stack"
+  ],
+  "walkthrough_validation": "pending"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-23",
+  "source_url": "https://artik.blue/reversing-radare-23",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "canary.c",
+  "default": "canary",
+  "examples": [
+    {
+      "id": "canary",
+      "title": "Stack protector",
+      "source": "canary.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 16,
+      "original_sha256": "7d04f48d0c3a385d5bd2d6c566b29cf090c3bac3e1a742b4a796148edbda8456",
+      "source_sha256": "7d04f48d0c3a385d5bd2d6c566b29cf090c3bac3e1a742b4a796148edbda8456",
+      "adaptations": [],
+      "cflags": [
+        "-fstack-protector-all"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n",
+          "contains": [
+            "Hi there Artik !!"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "canary-leak",
+      "title": "Read a stack canary",
+      "source": "canary-leak.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 8,
+      "article_line": 173,
+      "original_sha256": "9bd2d5886be65d05480a3564a9323505398b1ac435cd360ee7ead9e17f45b8e5",
+      "source_sha256": "9bd2d5886be65d05480a3564a9323505398b1ac435cd360ee7ead9e17f45b8e5",
+      "adaptations": [],
+      "cflags": [
+        "-fstack-protector-all"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "Canary value:"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "format-leak",
+      "title": "Format string memory leak",
+      "source": "format-leak.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 10,
+      "article_line": 239,
+      "original_sha256": "11fe5d15e344b88fced416ecd2f3a860e6ab1453ce7dea4d6273de8fdd424a47",
+      "source_sha256": "7a9f5ff07c1d88047ddd1360a61e5ca01976173fe811e800af407abb5f4c5787",
+      "adaptations": [
+        "Add the missing statement terminator."
+      ],
+      "cflags": [
+        "-fstack-protector-all"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n",
+          "contains": [
+            "COURSE_LEAK",
+            "Hi there Artik !!"
+          ],
+          "args": [
+            "COURSE_LEAK"
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    "Compiling without no-stack-protector",
+    "Stack canaries",
+    "Canary types",
+    "Bypassing StackGuard with memory leaks",
+    "References"
+  ],
+  "walkthrough_validation": "pending"
+}

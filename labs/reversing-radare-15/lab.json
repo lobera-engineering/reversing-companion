@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-15",
+  "source_url": "https://artik.blue/reversing-radare-15",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "byte-order.c",
+  "default": "byte-order",
+  "examples": [
+    {
+      "id": "byte-order",
+      "title": "Network byte order",
+      "source": "byte-order.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 4,
+      "article_line": 99,
+      "original_sha256": "afc7eae81c2868c47f75be785c9f6a4fd59a9a450d8579358540a87d94335ff1",
+      "source_sha256": "0a7a74cb46e04da5eacc92937d896afec733b496b218f33477fde933177b53dd",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <string.h>.",
+        "Add missing declaration header <strings.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <sys/socket.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "little-endian"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "inet-aton",
+      "title": "Parse an IPv4 address",
+      "source": "inet-aton.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 9,
+      "article_line": 209,
+      "original_sha256": "c0d0be6cf0ba6fee0622c39927152074efb8beeba3e05500875f545fda277131",
+      "source_sha256": "f9a5a61cc07f25c67dc991aeb98453526896d1b7d0036f603cc42cee175eff66",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <string.h>.",
+        "Add missing declaration header <strings.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <sys/socket.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "tcp-server",
+      "title": "TCP server",
+      "source": "tcp-server.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 20,
+      "article_line": 359,
+      "original_sha256": "63addedcd602f06b1968e3fe753bb8190522b6b13ee1757b177fe4d4473c8230",
+      "source_sha256": "d27ce759eb6a1e7cb788c626b6d87eb045ac6f783ca26bd07eb43ba78a349152",
+      "adaptations": [
+        "Add missing declaration header <strings.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <sys/socket.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [],
+      "network_check": "tcp-server"
+    },
+    {
+      "id": "tcp-client",
+      "title": "TCP client",
+      "source": "tcp-client.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 35,
+      "article_line": 696,
+      "original_sha256": "17d94459d2bb605219975cf5fee061ce796354b05664dcb4c27e16b9dd780724",
+      "source_sha256": "755c7ebd5a4bc0f666dcf202e07223a91b9503ef0796d3ff5b846cf36661de2c",
+      "adaptations": [
+        "Add missing declaration header <strings.h>.",
+        "Add missing declaration header <unistd.h>.",
+        "Add missing declaration header <sys/socket.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [],
+      "network_check": "tcp-client"
+    }
+  ],
+  "sections": [
+    "About sockets",
+    "Basic usage",
+    "Client processes",
+    "Server processes",
+    "Unix sockets in C",
+    "Basic data structures",
+    "About the network byte order",
+    "Main networking syscalls in Unix",
+    "Socket",
+    "Connect",
+    "Bind",
+    "Listen",
+    "Accept",
+    "Send",
+    "Recv",
+    "The server",
+    "The client"
+  ],
+  "walkthrough_validation": "pending"
+}

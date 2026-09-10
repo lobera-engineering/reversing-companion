@@ -1,0 +1,26 @@
+diff --git a/src/tools.c b/src/tools.c
+index 4717362..8c5e147 100644
+--- a/src/tools.c
++++ b/src/tools.c
+@@ -465,6 +465,21 @@ static char *tool_close_file(ServerState *ss, RJson *tool_args) {
+ 	if (ss->http_mode) {
+ 		return jsonrpc_tooltext_response ("In r2pipe mode we won't close the file.");
+ 	}
++	if (ss->rstate->core && ss->rstate->own_core) {
++		/* A standalone session owns its core. Recreate it when changing files:
++		 * r_anal_purge clears CC/type databases while core caches still say the
++		 * architecture is initialized, causing crashes on the next analysis.
++		 * Do not replace a borrowed core in the radare2 plugin mode. */
++		if (r_config_get_b (ss->rstate->core->config, "cfg.debug")) {
++			free (r2mcp_cmd (ss, "dk 9"));
++		}
++		r2mcp_rstate_fini (ss->rstate);
++		ss->frida_mode = false;
++		if (!r2mcp_rstate_init (ss->rstate)) {
++			return jsonrpc_tooltext_response ("File closed, but the analysis core could not be reinitialized.");
++		}
++		return jsonrpc_tooltext_response ("File closed successfully.");
++	}
+ 	if (ss->rstate->core) {
+ 		RCore *core = ss->rstate->core;
+ 		bool was_sandboxed = r_sandbox_enable (false);

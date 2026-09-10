@@ -1,0 +1,10 @@
+.runtime/
+.work/
+work/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.key
+*.pem
+*.prohibido

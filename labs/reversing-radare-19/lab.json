@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-19",
+  "source_url": "https://artik.blue/reversing-radare-19",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "tls-server.c",
+  "default": "tls-server",
+  "examples": [
+    {
+      "id": "tls-server",
+      "title": "TLS command server",
+      "source": "tls-server.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 19,
+      "original_sha256": "64f494d4e5e45598405981a6f1f531a5d62778231044c37d277736163b3ccefd",
+      "source_sha256": "ecf3b2b769e654d208fdec035d910b8f1e4b75a3c1c3212a07da33ba6b62fc62",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>."
+      ],
+      "cflags": [],
+      "ldflags": [
+        "-lssl",
+        "-lcrypto"
+      ],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [],
+      "network_check": "tls-server"
+    }
+  ],
+  "sections": [
+    "The bind reverse shell "
+  ],
+  "walkthrough_validation": "pending"
+}

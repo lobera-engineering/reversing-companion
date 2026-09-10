@@ -1,0 +1,152 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-10",
+  "source_url": "https://artik.blue/reversing-radare-10",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "pointer-step.c",
+  "default": "pointer-step",
+  "examples": [
+    {
+      "id": "pointer-step",
+      "title": "Pointer increment and out of bounds read",
+      "source": "pointer-step.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 12,
+      "original_sha256": "5385dfb5578fa3fdfa19d3306da74d63dc7449baf97c11b7dbbe6508feea2988",
+      "source_sha256": "dd297f5255ce04c306e8b7409ca69ae94a07aea3ef291eece59e0b7dd1cae4a4",
+      "adaptations": [
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [],
+      "sanitizer": {
+        "stdin": "\n",
+        "contains": "heap-buffer-overflow"
+      }
+    },
+    {
+      "id": "value-step",
+      "title": "Increment pointed value",
+      "source": "value-step.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 8,
+      "article_line": 150,
+      "original_sha256": "d1bdaa896263049bc784ab239999241f55e7edcf2b96b8b96ce178427b90cac0",
+      "source_sha256": "8db94ae49c862bd4e1032980a1331b42ce689cc797c057f0717dd20a8c48aa74",
+      "adaptations": [
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "3\n4"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "pointer-argument",
+      "title": "Modify caller through a pointer",
+      "source": "pointer-argument.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 11,
+      "article_line": 236,
+      "original_sha256": "b8f40d42c6bd05043cce001bd0afea86dc84c82034a51933ecbc74c860eaa35f",
+      "source_sha256": "dbc16be4f7561d926b60a43667667e925ed81d2d7b99684ea35bc095aa3f2e82",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "value= 5",
+            "updated_value= 10"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "pointer-array",
+      "title": "Pointer arithmetic",
+      "source": "pointer-array.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 19,
+      "article_line": 360,
+      "original_sha256": "e84c570670d00ec2ab8ded2a6c898c9edc8f85d61b260266874403bfccfce9aa",
+      "source_sha256": "db1e2ca6b61fb6366dc13afee8dab5ea2b17284a65301bd694ed4b7111f476aa",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "20 40"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "heap-struct",
+      "title": "Allocate and populate a structure",
+      "source": "heap-struct.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 26,
+      "article_line": 463,
+      "original_sha256": "46e72b5f8b09813865585b56a6d0ce96ffbf3cf904a3aa6ff8208644cd884db7",
+      "source_sha256": "890d27d562905d428bb9df58e00a0c75e03d3fb54e50a3f82ae4669503b6578b",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>.",
+        "Add missing declaration header <string.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "Peter, p@p.p, and the age is: 21"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [],
+  "walkthrough_validation": "pending"
+}

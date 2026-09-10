@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-9",
+  "source_url": "https://artik.blue/reversing-radare-9",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "pointer-write.c",
+  "default": "pointer-write",
+  "examples": [
+    {
+      "id": "pointer-write",
+      "title": "Modify through a pointer",
+      "source": "pointer-write.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 14,
+      "original_sha256": "8d3ccb71136959b5ea3f948b9fcc73a45593e9668088e61150dafad8806bf64b",
+      "source_sha256": "8d3ccb71136959b5ea3f948b9fcc73a45593e9668088e61150dafad8806bf64b",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "Value of i: 2",
+            "Value of c: c",
+            "Value of c: b"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "stack-array",
+      "title": "Sum stack array",
+      "source": "stack-array.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 15,
+      "article_line": 243,
+      "original_sha256": "7f2bb323fd1270ba4d172729d47686c78df7d62c39c482633776499586d6ee5e",
+      "source_sha256": "7f2bb323fd1270ba4d172729d47686c78df7d62c39c482633776499586d6ee5e",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "3\n10\n20\n30\n",
+          "contains": [
+            "SUM: 60"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "heap-array",
+      "title": "Allocate and free a dynamic array",
+      "source": "heap-array.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 19,
+      "article_line": 390,
+      "original_sha256": "1d918d33ef9617acb6cf9428e793925e8e84b2efb32444b73e95ef8efeafc8fe",
+      "source_sha256": "1d918d33ef9617acb6cf9428e793925e8e84b2efb32444b73e95ef8efeafc8fe",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "3\n10\n20\n30\n",
+          "contains": [
+            "SUM: 60"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [],
+  "walkthrough_validation": "pending"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare2-1",
+  "source_url": "https://artik.blue/reversing-radare2-1",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "hello.c",
+  "default": "hello",
+  "examples": [
+    {
+      "id": "hello",
+      "title": "Hello world",
+      "source": "hello.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 41,
+      "original_sha256": "05d705eb610cce2b9ac3a694a7fb9b73e24cd4f4dd7c55614d5b2353abe53a11",
+      "source_sha256": "05d705eb610cce2b9ac3a694a7fb9b73e24cd4f4dd7c55614d5b2353abe53a11",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "Hello, World!"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    "About this course",
+    "Getting radare2",
+    "Hello world",
+    "x64 binaries and its particularities",
+    "Commands used"
+  ],
+  "walkthrough_validation": "pending"
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-24",
+  "source_url": "https://artik.blue/reversing-radare-24",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "pie.c",
+  "default": "pie",
+  "examples": [
+    {
+      "id": "pie",
+      "title": "PIE load addresses",
+      "source": "pie.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 2,
+      "article_line": 96,
+      "original_sha256": "6a342406cafeaf154946b3488631d96a6e1353682d4af0905909c90c8ca2981e",
+      "source_sha256": "1da12d748e7cb46a69611d4d1bc983f7d9ed75462cbf01ea8665fac4ebff698e",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>."
+      ],
+      "cflags": [
+        "-fno-stack-protector"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "Hello World!"
+          ],
+          "args": []
+        }
+      ],
+      "pie": true
+    },
+    {
+      "id": "ret2win",
+      "title": "Reuse an existing function",
+      "source": "ret2win.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 5,
+      "article_line": 192,
+      "original_sha256": "b48f2d37d4465e352261bcd023284762bad55f73279f826d33e7fea6296f6e77",
+      "source_sha256": "7e91dad606f5c08e3a4932c9d19e4c3bfc3ad14f2c31199e435a04fe822fd703",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>."
+      ],
+      "cflags": [
+        "-fno-stack-protector"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n",
+          "contains": [
+            "Hi there Artik !!"
+          ],
+          "args": []
+        }
+      ],
+      "pie": false
+    },
+    {
+      "id": "plt-got",
+      "title": "PLT and GOT",
+      "source": "plt-got.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 11,
+      "article_line": 293,
+      "original_sha256": "4c516eb57fd4d811899f33d9e2c010d1604c5466b326563e0c9f8b44ae917fcd",
+      "source_sha256": "e3dbe0f215f0c10c4d58314bf495fba3eb4fb0705fa5b3a8a92c0dff8047cbed",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>."
+      ],
+      "cflags": [
+        "-fno-stack-protector"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n",
+          "contains": [
+            "Artik !it is you again"
+          ],
+          "args": []
+        }
+      ],
+      "pie": false
+    },
+    {
+      "id": "call-reuse",
+      "title": "Call reuse",
+      "source": "call-reuse.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 19,
+      "article_line": 424,
+      "original_sha256": "1d600831909c7bd71bbca8ba725df4a88e233237e3edfbbfe762dd305216e2bc",
+      "source_sha256": "d76bea71ab57e9b51e09a8856ea136e2ce660b292447026ca552018cb39bdfbe",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>."
+      ],
+      "cflags": [
+        "-fno-stack-protector"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n",
+          "contains": [
+            "hi Artik !"
+          ],
+          "args": []
+        }
+      ],
+      "pie": false
+    },
+    {
+      "id": "gadget",
+      "title": "Custom assembly gadget",
+      "source": "gadget.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 25,
+      "article_line": 539,
+      "original_sha256": "c497d6b87772f591b524ab906f0985783e8166aafa10bfa443a3111613abaf61",
+      "source_sha256": "ce6c97c7a4b2d520ad0edc88bbc8321cdd1267236a6572a4dc2c28f7ac8f51d9",
+      "adaptations": [
+        "Add missing declaration header <stdlib.h>."
+      ],
+      "cflags": [
+        "-fno-stack-protector"
+      ],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "Artik\n",
+          "contains": [
+            "hi Artik !"
+          ],
+          "args": []
+        }
+      ],
+      "pie": false
+    }
+  ],
+  "sections": [
+    "Introduction",
+    "About ASLR",
+    "PLT and GOT",
+    "Position independent Executables",
+    "Bypassing ASLR",
+    "Existing (useful) call",
+    "Call reuse by parameter switching",
+    "Call reuse and string crafting",
+    "Crafting our way to system()"
+  ],
+  "walkthrough_validation": "pending"
+}

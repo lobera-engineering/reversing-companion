@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-6",
+  "source_url": "https://artik.blue/reversing-radare-6",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "books.c",
+  "default": "books",
+  "examples": [
+    {
+      "id": "matrix",
+      "title": "Two dimensional array",
+      "source": "matrix.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 22,
+      "original_sha256": "70b42a0cc4cd95a46ed5c463426085760e5d1fdb03130ef367b93d54751b8e8d",
+      "source_sha256": "fb576ac937543fc31f420501f1bb5129b54c7cdbfbb12643863b44d4b6ed66ef",
+      "adaptations": [
+        "Add missing declaration header <time.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "\n",
+          "contains": [
+            "first group 3",
+            "second group 13"
+          ],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "students",
+      "title": "Struct containing arrays",
+      "source": "students.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 5,
+      "article_line": 244,
+      "original_sha256": "b4cab548e0b422dd4b72ded502714b198497ee86cb9c371b7b820c795bee5593",
+      "source_sha256": "59dee573edb74272f5858236e9a7ce962f533d6bbe427c607278cc03fc04fbc9",
+      "adaptations": [
+        "Add missing declaration header <time.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [],
+          "args": []
+        }
+      ]
+    },
+    {
+      "id": "books",
+      "title": "Books layout",
+      "source": "books.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 20,
+      "article_line": 602,
+      "original_sha256": "fdd2f259e956f0e98928be72635a969fbf0276b0f6742ad06a9b28fbb8cb2fbb",
+      "source_sha256": "57aeecd65a4d2c574621a7724f79e1dbebba011598ad3d713096ba558f21d9b9",
+      "adaptations": [
+        "Add missing declaration header <time.h>."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "contains": [
+            "C Programming",
+            "Telecom Billing",
+            "6495407",
+            "6495700"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [
+    "Multi dimensional arrays",
+    "Structs "
+  ],
+  "walkthrough_validation": "pending"
+}

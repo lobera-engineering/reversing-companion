@@ -1,0 +1,60 @@
+{
+    "schema_version": 2,
+    "lesson": "reversing-radare-18",
+    "source_url": "https://artik.blue/reversing-radare-18",
+    "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+    "source": "bind-shell.c",
+    "default": "bind-shell",
+    "examples": [
+        {
+            "id": "bind-shell",
+            "title": "Analyze bind shell process and handles",
+            "source": "bind-shell.c",
+            "language": "c",
+            "platform": "windows",
+            "standard": "gnu11",
+            "article_fence": 0,
+            "article_line": 29,
+            "original_sha256": "45006f13ebf18caabae16856951f1cf5d0109ca2fcbf4cb00d4ca9f2d836ed80",
+            "source_sha256": "a1c6ce82c5386aab69cd703b28afb0dd74b559cdceb19b92632dda065e503b6e",
+            "adaptations": [
+                "Turn the explanatory sentence at C statement scope into a comment."
+            ],
+            "cflags": [],
+            "ldflags": [
+                "-lws2_32"
+            ],
+            "fixtures": {},
+            "validation": "pending",
+            "cases": [],
+            "skip_execution": "Bind shell — listens on port 4443 and spawns cmd.exe for incoming connections. Requires network client to connect."
+        },
+        {
+            "id": "reverse-shell",
+            "title": "Analyze reverse shell process and handles",
+            "source": "reverse-shell.c",
+            "language": "c",
+            "platform": "windows",
+            "standard": "gnu11",
+            "article_fence": 13,
+            "article_line": 461,
+            "original_sha256": "1102cb395fe5471fdb41ded5c5df89a561220b50dcf2a7ffed97d7acab1db882",
+            "source_sha256": "1102cb395fe5471fdb41ded5c5df89a561220b50dcf2a7ffed97d7acab1db882",
+            "adaptations": [],
+            "cflags": [],
+            "ldflags": [
+                "-lws2_32"
+            ],
+            "fixtures": {},
+            "validation": "pending",
+            "cases": [],
+            "skip_execution": "Reverse shell — connects to 192.168.0.50:4443 and spawns cmd.exe. Requires live listener on C2."
+        }
+    ],
+    "sections": [
+        "\"Shells\" ",
+        "The bind shell ",
+        "The reverse shell"
+    ],
+    "walkthrough_validation": "pending"
+}

@@ -1,0 +1,236 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-14",
+  "source_url": "https://artik.blue/reversing-radare-14",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "messagebox.c",
+  "default": "messagebox",
+  "examples": [
+    {
+      "id": "messagebox",
+      "title": "MessageBox and Beep",
+      "source": "messagebox.c",
+      "language": "c",
+      "platform": "windows",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 26,
+      "original_sha256": "be750f05bea13350804327c8997ae512d60d3ee5040c3176bef1db581d735638",
+      "source_sha256": "ae4696fcc845377508a18d66d5fb67fa45823ab98e06a8288e4b14d97bce1fe0",
+      "adaptations": [
+        "Use lower-case windows.h for the case-sensitive cross compiler filesystem."
+      ],
+      "cflags": [],
+      "ldflags": [
+        "-luser32",
+        "-llz32"
+      ],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [],
+      "skip_execution": "Blocks on GUI MessageBox — cannot be dismissed non-interactively."
+    },
+    {
+      "id": "write-file",
+      "title": "CreateFile and WriteFile",
+      "source": "write-file.c",
+      "language": "c",
+      "platform": "windows",
+      "standard": "gnu11",
+      "article_fence": 6,
+      "article_line": 260,
+      "original_sha256": "ec3802270ed6728a1753dcd4e62ca82591d01d3a11312e624c61c8b3f228af78",
+      "source_sha256": "ec3802270ed6728a1753dcd4e62ca82591d01d3a11312e624c61c8b3f228af78",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [
+        "-luser32",
+        "-llz32"
+      ],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "args": [],
+          "setup": ["md C:\\samples 2>nul"],
+          "contains": ["File's HANDLE is OK!", "Bytes written: 5"],
+          "check_files": {"C:\\samples\\newfile.txt": "SAMPL"}
+        }
+      ]
+    },
+    {
+      "id": "read-write-file",
+      "title": "ReadFile and WriteFile",
+      "source": "read-write-file.c",
+      "language": "c",
+      "platform": "windows",
+      "standard": "gnu11",
+      "article_fence": 15,
+      "article_line": 472,
+      "original_sha256": "51aa11dc9aebaf2bae238a9a4d923899a02a59104cc0736d4da2d9ad2fe6e705",
+      "source_sha256": "51aa11dc9aebaf2bae238a9a4d923899a02a59104cc0736d4da2d9ad2fe6e705",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [
+        "-luser32",
+        "-llz32"
+      ],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "args": [],
+          "setup": [
+            "md C:\\samples 2>nul",
+            "echo TESTDATA>C:\\samples\\newfile.txt",
+            "type nul > C:\\samples\\newfile2.txt"
+          ],
+          "contains": ["Reading 180 bytes:", "File size in bytes:"],
+          "check_files": {"C:\\samples\\newfile2.txt": "TESTDATA"}
+        }
+      ]
+    },
+    {
+      "id": "copy-file",
+      "title": "CopyFile",
+      "source": "copy-file.c",
+      "language": "c",
+      "platform": "windows",
+      "standard": "gnu11",
+      "article_fence": 22,
+      "article_line": 807,
+      "original_sha256": "4eacb3f6f9ed7e7878cbd7096e5c8888babb60a841204251496a15c221dfb3f2",
+      "source_sha256": "4eacb3f6f9ed7e7878cbd7096e5c8888babb60a841204251496a15c221dfb3f2",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [
+        "-luser32",
+        "-llz32"
+      ],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "args": [],
+          "setup": [
+            "md C:\\samples 2>nul",
+            "echo COPYTEST>C:\\samples\\newfile.txt",
+            "del C:\\samples\\newfile2.txt 2>nul"
+          ],
+          "contains": ["Copying file using", "File copied"],
+          "check_files": {"C:\\samples\\newfile2.txt": "COPYTEST"}
+        }
+      ]
+    },
+    {
+      "id": "seek-file",
+      "title": "Seek inside files",
+      "source": "seek-file.c",
+      "language": "c",
+      "platform": "windows",
+      "standard": "gnu11",
+      "article_fence": 24,
+      "article_line": 871,
+      "original_sha256": "707ed47d41111d338a6e97a110e0c51abfcd329acfa7266e8229ad06950211ca",
+      "source_sha256": "707ed47d41111d338a6e97a110e0c51abfcd329acfa7266e8229ad06950211ca",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [
+        "-luser32",
+        "-llz32"
+      ],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "args": [],
+          "setup": [
+            "md C:\\samples 2>nul",
+            "echo DUMMYJPG>C:\\samples\\cat.jpg"
+          ],
+          "contains": ["Hello world!"],
+          "check_files": {"C:\\samples\\cat.jpg": "secret msg"}
+        }
+      ]
+    },
+    {
+      "id": "list-directory",
+      "title": "FindFirstFile and FindNextFile",
+      "source": "list-directory.c",
+      "language": "c",
+      "platform": "windows",
+      "standard": "gnu11",
+      "article_fence": 27,
+      "article_line": 972,
+      "original_sha256": "73cf5651efd0e96abab4d0dc76f304e9cf80a3384cd4ece8e770f649519e75fc",
+      "source_sha256": "4713388fefd73ed1e0a9f366788fe93f5d38c97bcee92385ad4dc9f37fa9f018",
+      "adaptations": [
+        "Define the directory buffer limit missing from this example."
+      ],
+      "cflags": [],
+      "ldflags": [
+        "-luser32",
+        "-llz32"
+      ],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "args": [],
+          "setup": [
+            "md C:\\samples\\stor 2>nul",
+            "echo hello>C:\\samples\\stor\\test1.txt",
+            "echo world>C:\\samples\\stor\\test2.txt"
+          ],
+          "contains": ["Hello world!", "Name=", "exit"]
+        }
+      ]
+    },
+    {
+      "id": "xor-files",
+      "title": "XOR file contents",
+      "source": "xor-files.c",
+      "language": "c",
+      "platform": "windows",
+      "standard": "gnu11",
+      "article_fence": 34,
+      "article_line": 1197,
+      "original_sha256": "2381ff4e340766ea0d84a23481d349347549e2328788792bed24966b9b97dcc6",
+      "source_sha256": "2381ff4e340766ea0d84a23481d349347549e2328788792bed24966b9b97dcc6",
+      "adaptations": [],
+      "cflags": [],
+      "ldflags": [
+        "-luser32",
+        "-llz32"
+      ],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "",
+          "args": [],
+          "setup": [
+            "md C:\\samples\\stor 2>nul",
+            "echo ABCDEFGHI>C:\\samples\\stor\\xtest.txt"
+          ],
+          "contains": ["Hello world!", "File size in bytes:", "Name="]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    "WindowsAPI HelloWorld",
+    "Write a file to disk CreateFile and WriteFile",
+    "Read and Write files ReadFile and WriteFile",
+    "CopyFile",
+    "Moving inside files LZSEEK",
+    "Listing dirs, FindFirstFile and FindNextFile",
+    "Xor Encrypting files "
+  ],
+  "walkthrough_validation": "pending"
+}

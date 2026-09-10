@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "lesson": "reversing-radare-7",
+  "source_url": "https://artik.blue/reversing-radare-7",
+  "source_commit": "98cd196ac71d22afc4eb4d832c7b7e4b8fad6e28",
+  "source": "student-array.c",
+  "default": "student-array",
+  "examples": [
+    {
+      "id": "student-array",
+      "title": "Array of structs and program patching",
+      "source": "student-array.c",
+      "language": "c",
+      "platform": "linux",
+      "standard": "gnu11",
+      "article_fence": 0,
+      "article_line": 10,
+      "original_sha256": "386374c1c046c56b81530ed7c4f0b9a578c6e1257f45ace7cbfa05f1994ed0cb",
+      "source_sha256": "081e5e7ebe59ea1aa7c67f0796db738e2a5d6d404f1d7f25d4f0e3079d53921f",
+      "adaptations": [
+        "The article places a radare2 type command at C file scope; retain it as a comment."
+      ],
+      "cflags": [],
+      "ldflags": [],
+      "fixtures": {},
+      "validation": "pending",
+      "cases": [
+        {
+          "stdin": "a\nA\n21\n7.5\nq\n\n",
+          "contains": [
+            "Round: 0",
+            "First letter?",
+            "Age?",
+            "Mark?"
+          ],
+          "args": []
+        }
+      ]
+    }
+  ],
+  "sections": [],
+  "walkthrough_validation": "pending"
+}
