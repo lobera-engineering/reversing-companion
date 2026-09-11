@@ -228,6 +228,6 @@ The AI bridge uses [radare2-mcp](https://github.com/radareorg/radare2-mcp) and [
 
 ## License
 
-The lab programs and companion code are provided as-is for learning purposes.
+This project is licensed under the [GNU General Public License v3.0](LICENSE). If you distribute modified versions, you must release your source under the same license.
 
 <sub>Course articles taken from the [original reversing course](https://artik.blue/reversing) by Pau Muñoz (artikblue, [lobera.ai](https://lobera.ai) founder) — edited, expanded, and adapted for use with the companion.</sub>
